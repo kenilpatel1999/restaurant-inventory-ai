@@ -32,10 +32,11 @@ export function Header({ isDark, toggleTheme, onMenuClick }: HeaderProps) {
       </div>
 
       <div className="flex items-center gap-2">
-        <button className="relative flex h-9 w-9 items-center justify-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 text-muted-light dark:text-muted-dark">
+        {/* Notification icon hidden for now */}
+        {/* <button className="relative flex h-9 w-9 items-center justify-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 text-muted-light dark:text-muted-dark">
           <Bell className="h-5 w-5" />
           <span className="absolute right-2 top-2 h-2 w-2 rounded-full bg-danger" />
-        </button>
+        </button> */}
 
         <ThemeToggle isDark={isDark} toggle={toggleTheme} />
 

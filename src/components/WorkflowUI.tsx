@@ -63,12 +63,46 @@ export function WorkflowUI() {
   };
 
   const formatMarkdown = (text: string) => {
+    // Replace @!@ with newline
+    let formatted = text.replace(/@!@/g, '\n');
+
     // Replace **bold** with <strong>bold</strong>
-    let formatted = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    formatted = formatted.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+
+    // Replace *italic* with <em>italic</em>
+    formatted = formatted.replace(/\*(.*?)\*/g, '<em>$1</em>');
+
+    // Replace `code` with <code>code</code>
+    formatted = formatted.replace(/`(.*?)`/g, '<code class="bg-slate-700 px-1 py-0.5 rounded text-emerald-400">$1</code>');
+
+    // Replace ```code block``` with <pre><code>
+    formatted = formatted.replace(/```([\s\S]*?)```/g, '<pre class="bg-slate-800 p-3 rounded-lg overflow-x-auto my-2"><code>$1</code></pre>');
+
+    // Replace # heading with <h1>
+    formatted = formatted.replace(/^# (.*$)/gm, '<h1 class="text-2xl font-bold text-slate-100 mb-2">$1</h1>');
+
+    // Replace ## heading with <h2>
+    formatted = formatted.replace(/^## (.*$)/gm, '<h2 class="text-xl font-bold text-slate-100 mb-2">$1</h2>');
+
+    // Replace ### heading with <h3>
+    formatted = formatted.replace(/^### (.*$)/gm, '<h3 class="text-lg font-bold text-slate-100 mb-2">$1</h3>');
+
+    // Replace - item with bullet points
+    formatted = formatted.replace(/^-   /gm, '• ');
+    formatted = formatted.replace(/^- /gm, '• ');
 
     // Replace * item with bullet points (handle both with and without spaces)
     formatted = formatted.replace(/^\*   /gm, '• ');
     formatted = formatted.replace(/^\* /gm, '• ');
+
+    // Replace > quote with blockquote
+    formatted = formatted.replace(/^> (.*$)/gm, '<blockquote class="border-l-4 border-slate-600 pl-4 italic text-slate-300 my-2">$1</blockquote>');
+
+    // Replace --- with horizontal rule
+    formatted = formatted.replace(/^---$/gm, '<hr class="border-slate-700 my-4"');
+
+    // Replace [link](url) with <a>
+    formatted = formatted.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" class="text-emerald-400 hover:underline" target="_blank" rel="noopener noreferrer">$1</a>');
 
     // Replace newlines with <br> for line breaks
     formatted = formatted.replace(/\n/g, '<br>');
@@ -464,7 +498,6 @@ export function WorkflowUI() {
               <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-emerald-600/20 mb-4">
                 <CheckCircle2 className="h-8 w-8 text-emerald-400" />
               </div>
-              <h3 className="text-2xl font-bold text-slate-100 mb-2">Workflow Complete!</h3>
               <p className="text-base text-slate-300 text-center mb-4">
                 Your inventory has been updated and orders have been placed.
               </p>

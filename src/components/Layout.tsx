@@ -26,6 +26,13 @@ export function Layout() {
     return () => window.removeEventListener('resize', check);
   }, []);
 
+  // Close floating chat when navigating to assistant page
+  useEffect(() => {
+    if (isAssistantPage && floatingChatOpen) {
+      setFloatingChatOpen(false);
+    }
+  }, [isAssistantPage, floatingChatOpen]);
+
   const sidebarWidth = isMobile ? 0 : sidebarCollapsed ? 72 : 260;
 
   return (
