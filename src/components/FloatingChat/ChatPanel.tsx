@@ -1,8 +1,9 @@
-import { useState, useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Minimize2, Bot, CheckCircle2, Package, TrendingUp } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import type { DeliveryItem, OrderableItem, WorkflowState, PredictiveItem } from './types';
+import { useAgent } from '@/contexts/AgentContext';
+import type { Vendor, OrderableItem } from './types';
 
 interface ChatPanelProps {
   isOpen: boolean;
@@ -10,53 +11,24 @@ interface ChatPanelProps {
   onMinimize?: () => void;
 }
 
-const INITIAL_ITEMS: DeliveryItem[] = [
-  { id: '1', name: 'Olives', quantity: 10, unit: 'lb', status: 'pending', checked: false },
-  { id: '2', name: 'Chicken', quantity: 7, unit: 'lb', status: 'pending', checked: false },
-  { id: '3', name: 'Tofu', quantity: 15, unit: 'lb', status: 'pending', checked: false },
-  { id: '4', name: 'Cilantro', quantity: 3, unit: 'lb', status: 'pending', checked: false },
-  { id: '5', name: 'Olive Oil', quantity: 7, unit: 'oz', status: 'pending', checked: false },
-  { id: '6', name: 'Onions', quantity: 20, unit: 'lb', status: 'pending', checked: false },
-];
-
-const VENDORS = [
+const VENDORS: Vendor[] = [
   { id: 'v1', name: 'Fresh Farms Co.', available: true },
   { id: 'v2', name: 'Quality Foods Inc.', available: true },
   { id: 'v3', name: 'Metro Suppliers', available: true },
 ];
 
-const PREDICTIVE_ITEMS: PredictiveItem[] = [
-  {
-    id: 'p1',
-    name: 'Onions',
-    quantity: 25,
-    unit: 'lb',
-    ordered: false,
-    reasoning: 'High usage over the past 3 days (avg 8 lb/day) with tomorrow\'s forecast showing 60% increase in orders containing onion-based dishes.',
-  },
-  {
-    id: 'p2',
-    name: 'Tomatoes',
-    quantity: 18,
-    unit: 'lb',
-    ordered: false,
-    reasoning: 'Current inventory at 15% below optimal level. Weekend forecast predicts 40% surge in salad orders and pasta dishes requiring fresh tomatoes.',
-  },
-  {
-    id: 'p3',
-    name: 'Cheese',
-    quantity: 12,
-    unit: 'lb',
-    ordered: false,
-    reasoning: 'Historical data shows cheese consumption spikes on Thursdays. Current stock will run out by Friday morning based on projected demand.',
-  },
-];
-
 export function ChatPanel({ isOpen, onClose, onMinimize }: ChatPanelProps) {
-  const [workflowState, setWorkflowState] = useState<WorkflowState>('greeting');
-  const [items, setItems] = useState<DeliveryItem[]>(INITIAL_ITEMS);
-  const [orderableItems, setOrderableItems] = useState<OrderableItem[]>([]);
-  const [predictiveItems, setPredictiveItems] = useState<PredictiveItem[]>(PREDICTIVE_ITEMS);
+  const {
+    workflowState,
+    setWorkflowState,
+    items,
+    setItems,
+    orderableItems,
+    setOrderableItems,
+    predictiveItems,
+    setPredictiveItems,
+    setLastUpdatedBy,
+  } = useAgent();
   const contentRef = useRef<HTMLDivElement>(null);
   const timerRef = useRef<number | null>(null);
 
@@ -115,6 +87,7 @@ export function ChatPanel({ isOpen, onClose, onMinimize }: ChatPanelProps) {
 
     if (missingItems.length === 0) {
       setWorkflowState('complete');
+      setLastUpdatedBy('agent');
       return;
     }
 
@@ -126,6 +99,7 @@ export function ChatPanel({ isOpen, onClose, onMinimize }: ChatPanelProps) {
 
     setOrderableItems(orderable);
     setWorkflowState('ordering');
+    setLastUpdatedBy('agent');
   };
 
   const handleOrder = (itemId: string, vendorId: string) => {
@@ -137,16 +111,19 @@ export function ChatPanel({ isOpen, onClose, onMinimize }: ChatPanelProps) {
         ? { ...item, status: 'ordered', orderedFrom: vendor.name }
         : item
     ));
+    setLastUpdatedBy('agent');
   };
 
   const handlePredictiveOrder = (itemId: string) => {
     setPredictiveItems(prev => prev.map(item =>
       item.id === itemId ? { ...item, ordered: true } : item
     ));
+    setLastUpdatedBy('agent');
   };
 
   const handleDone = () => {
     setWorkflowState('final');
+    setLastUpdatedBy('agent');
   };
 
   return (
