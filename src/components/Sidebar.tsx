@@ -11,6 +11,7 @@ import {
   MessageSquare,
   Settings,
   ChevronLeft,
+  ChevronRight,
   Leaf,
   X,
 } from 'lucide-react';
@@ -42,7 +43,7 @@ export function Sidebar({ collapsed, onToggle, mobileOpen, onMobileClose }: Side
         'flex h-16 items-center border-b border-border-light dark:border-border-dark px-4',
         collapsed ? 'justify-center' : 'justify-between'
       )}>
-        <div className="flex items-center gap-2.5">
+        <div className="flex items-center gap-2.5 cursor-pointer" onClick={onToggle}>
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
             <Leaf className="h-4.5 w-4.5" />
           </div>
@@ -59,13 +60,9 @@ export function Sidebar({ collapsed, onToggle, mobileOpen, onMobileClose }: Side
         </div>
         <button
           onClick={onToggle}
-          className={cn(
-            'hidden lg:flex h-7 w-7 items-center justify-center rounded-md transition-colors',
-            'hover:bg-gray-100 dark:hover:bg-gray-800 text-muted-light dark:text-muted-dark',
-            collapsed && 'hidden'
-          )}
+          className="hidden lg:flex h-7 w-7 items-center justify-center rounded-md transition-colors hover:bg-gray-100 dark:hover:bg-gray-800 text-muted-light dark:text-muted-dark"
         >
-          <ChevronLeft className="h-4 w-4" />
+          {collapsed ? <ChevronRight className="h-4 w-4" /> : <ChevronLeft className="h-4 w-4" />}
         </button>
         <button
           onClick={onMobileClose}
