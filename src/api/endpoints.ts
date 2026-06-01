@@ -16,7 +16,104 @@ import type { ChatMessage } from '@/types';
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+
 export const api = {
+  /**
+   * Stream AI recommendations from the backend using fetch with manual SSE parsing
+   * @param query - Natural language query for supplier recommendations
+   * @param onChunk - Callback for each text chunk received
+   * @param onComplete - Callback when streaming completes
+   * @param onError - Callback for errors
+   * @returns AbortController instance for connection management
+   */
+  streamRecommendations: (
+    query: string,
+    onChunk: (chunk: string) => void,
+    onComplete: () => void,
+    onError: (error: Error) => void
+  ): AbortController => {
+    const url = `${API_BASE_URL}/recommend?query=${encodeURIComponent(query)}`;
+    const abortController = new AbortController();
+    let chunkCount = 0;
+
+    fetch(url, { signal: abortController.signal })
+      .then(async (response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const reader = response.body?.getReader();
+        const decoder = new TextDecoder();
+
+        if (!reader) {
+          throw new Error('Response body is not readable');
+        }
+
+        let buffer = '';
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+
+          const chunk = decoder.decode(value, { stream: true });
+          buffer += chunk;
+
+          // Parse SSE format: "data: <content>\n\n"
+          // Split by double newline to get complete SSE events
+          const events = buffer.split('\n\n');
+          buffer = events.pop() || ''; // Keep the last incomplete event in buffer
+
+          for (const event of events) {
+            const lines = event.split('\n');
+            let eventData = '';
+            for (const line of lines) {
+              if (line.startsWith('data: ')) {
+                const data = line.substring(6); // Remove "data: " prefix
+                eventData += data;
+              } else if (line.trim()) {
+                // Also capture non-data lines (content before data: prefix)
+                eventData += line;
+              }
+            }
+            if (eventData) {
+              chunkCount++;
+              console.log(`[Fetch] Chunk #${chunkCount}:`, eventData);
+              onChunk(eventData);
+            }
+          }
+        }
+
+        // Process any remaining buffer
+        if (buffer.includes('data: ')) {
+          const lines = buffer.split('\n');
+          for (const line of lines) {
+            if (line.startsWith('data: ')) {
+              const data = line.substring(6);
+              if (data) {
+                chunkCount++;
+                console.log(`[Fetch] Final chunk #${chunkCount}:`, data);
+                onChunk(data);
+              }
+            }
+          }
+        }
+
+        console.log(`[Fetch] Stream completed. Total chunks: ${chunkCount}`);
+        onComplete();
+      })
+      .catch((error) => {
+        if (error.name === 'AbortError') {
+          console.log('[Fetch] Stream aborted');
+        } else {
+          console.error('[Fetch] Stream error:', error);
+          onError(error);
+        }
+      });
+
+    return abortController;
+  },
+
   getInventory: async () => {
     await delay(400);
     return inventoryItems;

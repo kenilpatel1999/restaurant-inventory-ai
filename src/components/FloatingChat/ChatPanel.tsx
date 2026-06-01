@@ -1,8 +1,11 @@
-import { useState, useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Minimize2, Bot, CheckCircle2, Package, TrendingUp } from 'lucide-react';
+import { X, Minimize2, Bot, CheckCircle2, Package, TrendingUp, Send, Sparkles } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import type { DeliveryItem, OrderableItem, WorkflowState, PredictiveItem } from './types';
+import { useAgent } from '@/contexts/AgentContext';
+import { api } from '@/api/endpoints';
+import type { Vendor, OrderableItem } from './types';
+import type { ChatMessage } from '@/types';
 
 interface ChatPanelProps {
   isOpen: boolean;
@@ -10,55 +13,38 @@ interface ChatPanelProps {
   onMinimize?: () => void;
 }
 
-const INITIAL_ITEMS: DeliveryItem[] = [
-  { id: '1', name: 'Olives', quantity: 10, unit: 'lb', status: 'pending', checked: false },
-  { id: '2', name: 'Chicken', quantity: 7, unit: 'lb', status: 'pending', checked: false },
-  { id: '3', name: 'Tofu', quantity: 15, unit: 'lb', status: 'pending', checked: false },
-  { id: '4', name: 'Cilantro', quantity: 3, unit: 'lb', status: 'pending', checked: false },
-  { id: '5', name: 'Olive Oil', quantity: 7, unit: 'oz', status: 'pending', checked: false },
-  { id: '6', name: 'Onions', quantity: 20, unit: 'lb', status: 'pending', checked: false },
-];
-
-const VENDORS = [
+const VENDORS: Vendor[] = [
   { id: 'v1', name: 'Fresh Farms Co.', available: true },
   { id: 'v2', name: 'Quality Foods Inc.', available: true },
   { id: 'v3', name: 'Metro Suppliers', available: true },
 ];
 
-const PREDICTIVE_ITEMS: PredictiveItem[] = [
-  {
-    id: 'p1',
-    name: 'Onions',
-    quantity: 25,
-    unit: 'lb',
-    ordered: false,
-    reasoning: 'High usage over the past 3 days (avg 8 lb/day) with tomorrow\'s forecast showing 60% increase in orders containing onion-based dishes.',
-  },
-  {
-    id: 'p2',
-    name: 'Tomatoes',
-    quantity: 18,
-    unit: 'lb',
-    ordered: false,
-    reasoning: 'Current inventory at 15% below optimal level. Weekend forecast predicts 40% surge in salad orders and pasta dishes requiring fresh tomatoes.',
-  },
-  {
-    id: 'p3',
-    name: 'Cheese',
-    quantity: 12,
-    unit: 'lb',
-    ordered: false,
-    reasoning: 'Historical data shows cheese consumption spikes on Thursdays. Current stock will run out by Friday morning based on projected demand.',
-  },
-];
-
 export function ChatPanel({ isOpen, onClose, onMinimize }: ChatPanelProps) {
-  const [workflowState, setWorkflowState] = useState<WorkflowState>('greeting');
-  const [items, setItems] = useState<DeliveryItem[]>(INITIAL_ITEMS);
-  const [orderableItems, setOrderableItems] = useState<OrderableItem[]>([]);
-  const [predictiveItems, setPredictiveItems] = useState<PredictiveItem[]>(PREDICTIVE_ITEMS);
+  const {
+    workflowState,
+    setWorkflowState,
+    items,
+    setItems,
+    orderableItems,
+    setOrderableItems,
+    predictiveItems,
+    setPredictiveItems,
+    setLastUpdatedBy,
+    chatMessages,
+    addChatMessage,
+    updateChatMessage,
+  } = useAgent();
   const contentRef = useRef<HTMLDivElement>(null);
   const timerRef = useRef<number | null>(null);
+  const [input, setInput] = useState('');
+  const [isStreaming, setIsStreaming] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [retryCount, setRetryCount] = useState(0);
+  const [lastQuery, setLastQuery] = useState<string | null>(null);
+  const MAX_RETRIES = 3;
+  const streamingMessageIdRef = useRef<string | null>(null);
+  const abortControllerRef = useRef<AbortController | null>(null);
+  const accumulatedContentRef = useRef<string>('');
 
   const scrollToBottom = () => {
     contentRef.current?.scrollTo({ top: contentRef.current.scrollHeight, behavior: 'smooth' });
@@ -66,7 +52,17 @@ export function ChatPanel({ isOpen, onClose, onMinimize }: ChatPanelProps) {
 
   useEffect(() => {
     scrollToBottom();
-  }, [workflowState, orderableItems, predictiveItems]);
+  }, [workflowState, orderableItems, predictiveItems, chatMessages]);
+
+  // Cleanup AbortController on component unmount
+  useEffect(() => {
+    return () => {
+      if (abortControllerRef.current) {
+        abortControllerRef.current.abort();
+        abortControllerRef.current = null;
+      }
+    };
+  }, []);
 
   useEffect(() => {
     if (workflowState === 'complete') {
@@ -115,6 +111,7 @@ export function ChatPanel({ isOpen, onClose, onMinimize }: ChatPanelProps) {
 
     if (missingItems.length === 0) {
       setWorkflowState('complete');
+      setLastUpdatedBy('agent');
       return;
     }
 
@@ -126,6 +123,7 @@ export function ChatPanel({ isOpen, onClose, onMinimize }: ChatPanelProps) {
 
     setOrderableItems(orderable);
     setWorkflowState('ordering');
+    setLastUpdatedBy('agent');
   };
 
   const handleOrder = (itemId: string, vendorId: string) => {
@@ -137,16 +135,201 @@ export function ChatPanel({ isOpen, onClose, onMinimize }: ChatPanelProps) {
         ? { ...item, status: 'ordered', orderedFrom: vendor.name }
         : item
     ));
+    setLastUpdatedBy('agent');
   };
 
   const handlePredictiveOrder = (itemId: string) => {
     setPredictiveItems(prev => prev.map(item =>
       item.id === itemId ? { ...item, ordered: true } : item
     ));
+    setLastUpdatedBy('agent');
   };
 
   const handleDone = () => {
     setWorkflowState('final');
+    setLastUpdatedBy('agent');
+  };
+
+  const formatMarkdown = (text: string) => {
+    // Replace @!@ with newline
+    let formatted = text.replace(/@!@/g, '\n');
+
+    // Replace **bold** with <strong>bold</strong>
+    formatted = formatted.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+
+    // Replace *italic* with <em>italic</em>
+    formatted = formatted.replace(/\*(.*?)\*/g, '<em>$1</em>');
+
+    // Replace `code` with <code>code</code>
+    formatted = formatted.replace(/`(.*?)`/g, '<code class="bg-slate-700 px-1 py-0.5 rounded text-emerald-400">$1</code>');
+
+    // Replace ```code block``` with <pre><code>
+    formatted = formatted.replace(/```([\s\S]*?)```/g, '<pre class="bg-slate-800 p-3 rounded-lg overflow-x-auto my-2"><code>$1</code></pre>');
+
+    // Replace # heading with <h1>
+    formatted = formatted.replace(/^# (.*$)/gm, '<h1 class="text-2xl font-bold text-slate-100 mb-2">$1</h1>');
+
+    // Replace ## heading with <h2>
+    formatted = formatted.replace(/^## (.*$)/gm, '<h2 class="text-xl font-bold text-slate-100 mb-2">$1</h2>');
+
+    // Replace ### heading with <h3>
+    formatted = formatted.replace(/^### (.*$)/gm, '<h3 class="text-lg font-bold text-slate-100 mb-2">$1</h3>');
+
+    // Replace - item with bullet points
+    formatted = formatted.replace(/^-   /gm, '• ');
+    formatted = formatted.replace(/^- /gm, '• ');
+
+    // Replace * item with bullet points (handle both with and without spaces)
+    formatted = formatted.replace(/^\*   /gm, '• ');
+    formatted = formatted.replace(/^\* /gm, '• ');
+
+    // Replace > quote with blockquote
+    formatted = formatted.replace(/^> (.*$)/gm, '<blockquote class="border-l-4 border-slate-600 pl-4 italic text-slate-300 my-2">$1</blockquote>');
+
+    // Replace --- with horizontal rule
+    formatted = formatted.replace(/^---$/gm, '<hr class="border-slate-700 my-4"');
+
+    // Replace [link](url) with <a>
+    formatted = formatted.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" class="text-emerald-400 hover:underline" target="_blank" rel="noopener noreferrer">$1</a>');
+
+    // Replace newlines with <br> for line breaks
+    formatted = formatted.replace(/\n/g, '<br>');
+
+    return formatted;
+  };
+
+  const handleSend = () => {
+    if (!input.trim()) return;
+
+    const userMessage: ChatMessage = {
+      id: Date.now().toString(),
+      role: 'user',
+      content: input.trim(),
+      timestamp: new Date().toISOString(),
+      type: 'text',
+    };
+
+    const query = input.trim();
+    setInput('');
+    setLastQuery(query);
+    setRetryCount(0);
+    addChatMessage(userMessage);
+    setLastUpdatedBy('assistant');
+
+    const assistantMessageId = Date.now().toString() + '_assistant';
+    streamingMessageIdRef.current = assistantMessageId;
+
+    const assistantMessage: ChatMessage = {
+      id: assistantMessageId,
+      role: 'assistant',
+      content: '',
+      timestamp: new Date().toISOString(),
+      type: 'text',
+    };
+
+    addChatMessage(assistantMessage);
+    setIsStreaming(true);
+    accumulatedContentRef.current = '';
+
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
+
+    const abortController = api.streamRecommendations(
+      query,
+      (chunk) => {
+        accumulatedContentRef.current += chunk;
+        updateChatMessage(assistantMessageId, (msg) => ({
+          ...msg,
+          content: accumulatedContentRef.current,
+        }));
+      },
+      () => {
+        setIsStreaming(false);
+        streamingMessageIdRef.current = null;
+        abortControllerRef.current = null;
+        setRetryCount(0);
+      },
+      (err) => {
+        console.error('Streaming error:', err);
+        setRetryCount(prev => prev + 1);
+        if (retryCount < MAX_RETRIES) {
+          setError('An error occurred. Please try again.');
+        } else {
+          setError('Maximum retry attempts reached. Please try again later.');
+        }
+        setIsStreaming(false);
+        streamingMessageIdRef.current = null;
+        abortControllerRef.current = null;
+        updateChatMessage(assistantMessageId, (msg) => ({
+          ...msg,
+          content: 'Failed to get response. Please try again.',
+        }));
+      }
+    );
+
+    abortControllerRef.current = abortController;
+  };
+
+  const handleRetry = () => {
+    if (!lastQuery || retryCount >= MAX_RETRIES) return;
+
+    setRetryCount(prev => prev + 1);
+    setError(null);
+
+    const assistantMessageId = Date.now().toString() + '_assistant';
+    streamingMessageIdRef.current = assistantMessageId;
+
+    const assistantMessage: ChatMessage = {
+      id: assistantMessageId,
+      role: 'assistant',
+      content: '',
+      timestamp: new Date().toISOString(),
+      type: 'text',
+    };
+
+    addChatMessage(assistantMessage);
+    setIsStreaming(true);
+    accumulatedContentRef.current = '';
+
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
+
+    const abortController = api.streamRecommendations(
+      lastQuery,
+      (chunk) => {
+        accumulatedContentRef.current += chunk;
+        updateChatMessage(assistantMessageId, (msg) => ({
+          ...msg,
+          content: accumulatedContentRef.current,
+        }));
+      },
+      () => {
+        setIsStreaming(false);
+        streamingMessageIdRef.current = null;
+        abortControllerRef.current = null;
+        setRetryCount(0);
+      },
+      (err) => {
+        console.error('Streaming error:', err);
+        setRetryCount(prev => prev + 1);
+        if (retryCount < MAX_RETRIES) {
+          setError('An error occurred. Please try again.');
+        } else {
+          setError('Maximum retry attempts reached. Please try again later.');
+        }
+        setIsStreaming(false);
+        streamingMessageIdRef.current = null;
+        abortControllerRef.current = null;
+        updateChatMessage(assistantMessageId, (msg) => ({
+          ...msg,
+          content: 'Failed to get response. Please try again.',
+        }));
+      }
+    );
+
+    abortControllerRef.current = abortController;
   };
 
   return (
@@ -340,16 +523,103 @@ export function ChatPanel({ isOpen, onClose, onMinimize }: ChatPanelProps) {
               </motion.div>
             )}
 
-            {/* Final State */}
+            {/* Final State - Chat Interface */}
             {workflowState === 'final' && (
-              <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}
-                className="flex flex-col items-center justify-center h-full text-center px-6">
-                <div className="h-16 w-16 rounded-full bg-emerald-500/20 flex items-center justify-center mb-4">
-                  <Bot className="h-8 w-8 text-emerald-400" />
+              <div className="flex flex-col h-full">
+                <div ref={contentRef} className="flex-1 overflow-y-auto p-4 space-y-4">
+                  {/* Chat Messages */}
+                  {chatMessages.map((msg) => {
+                    if (msg.role === 'assistant' && !msg.content && isStreaming && msg.id === streamingMessageIdRef.current) {
+                      return null;
+                    }
+
+                    return (
+                      <div
+                        key={msg.id}
+                        className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
+                      >
+                        <div
+                          className={`max-w-[80%] rounded-xl px-4 py-3 ${msg.role === 'user'
+                            ? 'bg-emerald-600 text-white'
+                            : 'bg-slate-800 text-slate-100 border border-slate-700'
+                            }`}
+                        >
+                          {msg.role === 'assistant' ? (
+                            <p
+                              className="text-sm"
+                              dangerouslySetInnerHTML={{ __html: formatMarkdown(msg.content) }}
+                            />
+                          ) : (
+                            <p className="text-sm whitespace-pre-wrap">{msg.content}</p>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
+
+                  {/* Streaming Indicator */}
+                  {isStreaming && (
+                    <div className="flex justify-start">
+                      <div className="bg-slate-800 border border-slate-700 rounded-xl px-4 py-3">
+                        <div className="flex items-center gap-2">
+                          <div className="flex gap-1">
+                            <span className="h-2 w-2 rounded-full bg-slate-400 animate-bounce" style={{ animationDelay: '0ms' }} />
+                            <span className="h-2 w-2 rounded-full bg-slate-400 animate-bounce" style={{ animationDelay: '150ms' }} />
+                            <span className="h-2 w-2 rounded-full bg-slate-400 animate-bounce" style={{ animationDelay: '300ms' }} />
+                          </div>
+                          <span className="text-sm text-slate-400">AI is thinking...</span>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Error Message */}
+                  {error && (
+                    <div className="flex justify-center">
+                      <div className="bg-red-900/20 border border-red-700 rounded-xl px-4 py-3 flex flex-col items-center gap-2">
+                        <p className="text-sm text-red-400">{error}</p>
+                        {retryCount < MAX_RETRIES && (
+                          <button
+                            onClick={handleRetry}
+                            disabled={isStreaming}
+                            className="px-3 py-1.5 bg-red-600 hover:bg-red-500 text-white text-xs font-medium rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                          >
+                            Retry ({MAX_RETRIES - retryCount} attempts left)
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  )}
                 </div>
-                <h4 className="text-xl font-bold text-white mb-2">{getGreeting()}</h4>
-                <p className="text-slate-400 text-base">All tasks completed successfully.</p>
-              </motion.div>
+
+                {/* Chat Input */}
+                <div className="border-t border-slate-700 p-4">
+                  <div className="flex items-center gap-2">
+                    <div className="flex flex-1 items-center gap-2 rounded-xl border border-slate-700 bg-slate-800 px-3 py-2.5">
+                      <Sparkles className="h-4 w-4 text-emerald-400 shrink-0" />
+                      <input
+                        type="text"
+                        value={input}
+                        onChange={(e) => setInput(e.target.value)}
+                        onKeyDown={(e) => e.key === 'Enter' && handleSend()}
+                        placeholder="Ask about inventory, suppliers, predictions..."
+                        className="flex-1 bg-transparent text-sm outline-none placeholder:text-slate-500 text-slate-100"
+                        disabled={isStreaming}
+                      />
+                    </div>
+                    <button
+                      onClick={handleSend}
+                      disabled={!input.trim() || isStreaming}
+                      className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl transition-colors ${input.trim() && !isStreaming
+                        ? 'bg-emerald-600 hover:bg-emerald-500 text-white'
+                        : 'bg-slate-800 text-slate-600 cursor-not-allowed'
+                        }`}
+                    >
+                      <Send className="h-4 w-4" />
+                    </button>
+                  </div>
+                </div>
+              </div>
             )}
           </div>
 
