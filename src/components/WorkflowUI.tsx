@@ -63,8 +63,67 @@ export function WorkflowUI() {
   };
 
   const formatMarkdown = (text: string) => {
-    // Replace @!@ with newline
-    let formatted = text.replace(/@!@/g, '\n');
+    // Process markdown tables first (before other formatting)
+    // Backend uses @!@ as row separator, so we'll use that to reconstruct table rows
+    let formatted = text;
+
+    // Find table content: starts with | and contains multiple @!@ separators
+    const tableStartIndex = formatted.indexOf('|');
+    const tableEndIndex = formatted.lastIndexOf('|');
+
+    if (tableStartIndex !== -1 && tableEndIndex !== -1 && tableEndIndex > tableStartIndex) {
+      // Extract potential table content
+      const tableContent = formatted.substring(tableStartIndex, tableEndIndex + 1);
+
+      // Split by @!@ to get rows (backend uses this as row separator)
+      const rawRows = tableContent.split('@!@').filter(row => row.trim().includes('|'));
+
+      if (rawRows.length >= 2) {
+        let tableHtml = '<table class="w-full border-collapse my-4 text-sm">';
+        let isHeader = true;
+
+        rawRows.forEach((row) => {
+          let trimmedRow = row.trim();
+          if (!trimmedRow.startsWith('|') || !trimmedRow.endsWith('|')) {
+            // Try to fix incomplete rows by adding missing pipes
+            if (trimmedRow.startsWith('|')) {
+              trimmedRow = trimmedRow + '|';
+            } else if (trimmedRow.endsWith('|')) {
+              trimmedRow = '|' + trimmedRow;
+            }
+          }
+
+          const cells = trimmedRow.split('|').filter(cell => cell.trim() !== '');
+          // Check if this is a separator row (contains :---)
+          if (cells.some(cell => cell.includes(':---'))) {
+            isHeader = false;
+            return;
+          }
+
+          if (isHeader) {
+            tableHtml += '<thead><tr>';
+            cells.forEach(cell => {
+              tableHtml += `<th class="border border-slate-700 px-3 py-2 text-left font-semibold text-slate-100">${cell.trim()}</th>`;
+            });
+            tableHtml += '</tr></thead><tbody>';
+          } else {
+            tableHtml += '<tr>';
+            cells.forEach(cell => {
+              tableHtml += `<td class="border border-slate-700 px-3 py-2 text-slate-300">${cell.trim()}</td>`;
+            });
+            tableHtml += '</tr>';
+          }
+        });
+
+        tableHtml += '</tbody></table>';
+
+        // Replace the table content with HTML table
+        formatted = formatted.substring(0, tableStartIndex) + tableHtml + formatted.substring(tableEndIndex + 1);
+      }
+    }
+
+    // Replace remaining @!@ with newline
+    formatted = formatted.replace(/@!@/g, '\n');
 
     // Replace **bold** with <strong>bold</strong>
     formatted = formatted.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
@@ -99,13 +158,13 @@ export function WorkflowUI() {
     formatted = formatted.replace(/^> (.*$)/gm, '<blockquote class="border-l-4 border-slate-600 pl-4 italic text-slate-300 my-2">$1</blockquote>');
 
     // Replace --- with horizontal rule
-    formatted = formatted.replace(/^---$/gm, '<hr class="border-slate-700 my-4"');
+    formatted = formatted.replace(/^---$/gm, '<hr class="border-slate-700 my-4">');
 
     // Replace [link](url) with <a>
     formatted = formatted.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" class="text-emerald-400 hover:underline" target="_blank" rel="noopener noreferrer">$1</a>');
 
-    // Replace newlines with <br> for line breaks
-    formatted = formatted.replace(/\n/g, '<br>');
+    // Replace newlines with <br> for line breaks (but not inside tables)
+    formatted = formatted.replace(/\n(?!.*<\/table>)/g, '<br>');
 
     return formatted;
   };
