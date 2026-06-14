@@ -98,16 +98,11 @@ export function Orders() {
   const isWithinCancellationWindow = (order: Order) => {
     const expectedDeliveryDate = new Date(order.expectedDeliveryDate);
     const deliveryDateUTC = new Date(Date.UTC(expectedDeliveryDate.getUTCFullYear(), expectedDeliveryDate.getUTCMonth(), expectedDeliveryDate.getUTCDate()));
-    console.log("Expected Delivery Date:", expectedDeliveryDate);
-    console.log("Delivery Date UTC:", deliveryDateUTC);
 
     const cutoffDate = addDays(new Date(), CANCELLATION_DAYS_THRESHOLD);
     const cutoffDateUTC = new Date(Date.UTC(cutoffDate.getUTCFullYear(), cutoffDate.getUTCMonth(), cutoffDate.getUTCDate()));
-    console.log("Cutoff Date UTC:", cutoffDateUTC);
     const deliveryDateKey = format(deliveryDateUTC, 'yyyy-MM-dd');
     const cutoffKey = format(cutoffDateUTC, 'yyyy-MM-dd');
-    console.log("Delivery Date Key:", deliveryDateKey);
-    console.log("Cutoff Date Key:", cutoffKey);
     return deliveryDateKey > cutoffKey;
   };
 
@@ -186,10 +181,10 @@ export function Orders() {
     const isExpanded = expandedOrders.has(order.id);
     const canModify = isWithinCancellationWindow(order);
     const inWarningZone = isInWarningZone(order);
-    const orderDateKey = format(new Date(order.orderDate), 'yyyy-MM-dd');
+    const expectedDeliveryDateKey = format(new Date(order.expectedDeliveryDate), 'yyyy-MM-dd');
     const todayKey = format(today, 'yyyy-MM-dd');
 
-    if (orderDateKey < todayKey) {
+    if (expectedDeliveryDateKey < todayKey) {
       return (
         <PastOrderComponent
           key={order.id}
@@ -199,7 +194,7 @@ export function Orders() {
           index={index}
         />
       );
-    } else if (orderDateKey === todayKey) {
+    } else if (expectedDeliveryDateKey === todayKey) {
       return (
         <CurrentOrderComponent
           key={order.id}

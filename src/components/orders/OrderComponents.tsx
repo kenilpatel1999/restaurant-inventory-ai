@@ -201,7 +201,7 @@ export function FutureOrderComponent({ order, isExpanded, onToggle, index, canMo
               <p className="text-base sm:text-lg font-bold text-text-light dark:text-text-dark mt-1">${order.total.toFixed(2)}</p>
             </div>
 
-            {canModify && (order.status === 'scheduled' || order.status === 'pending') && (
+            {canModify && (
               <div className="flex flex-col sm:flex-row gap-2">
                 <button
                   onClick={onCancel}
@@ -218,7 +218,7 @@ export function FutureOrderComponent({ order, isExpanded, onToggle, index, canMo
               </div>
             )}
 
-            {inWarningZone && (order.status === 'scheduled' || order.status === 'pending') && (
+            {inWarningZone && (
               <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800">
                 <Clock className="h-4 w-4 text-amber-600 dark:text-amber-400 shrink-0" />
                 <p className="text-xs text-amber-700 dark:text-amber-300">
