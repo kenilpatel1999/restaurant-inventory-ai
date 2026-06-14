@@ -1,0 +1,5921 @@
+[
+  {
+    "id": "ORD-001",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Shrimp",
+        "quantity": 54,
+        "unitPrice": 12
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 38,
+        "unitPrice": 2.5
+      }
+    ],
+    "total": 743,
+    "status": "delivered",
+    "orderDate": "2026-05-10T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-13T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-05-14T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-002",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 59,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Eggs",
+        "quantity": 24,
+        "unitPrice": 5
+      },
+      {
+        "name": "Bread",
+        "quantity": 15,
+        "unitPrice": 4
+      }
+    ],
+    "total": 328,
+    "status": "delivered",
+    "orderDate": "2026-05-10T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-14T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-15T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-003",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Salmon",
+        "quantity": 43,
+        "unitPrice": 15
+      },
+      {
+        "name": "Bread",
+        "quantity": 34,
+        "unitPrice": 4
+      }
+    ],
+    "total": 781,
+    "status": "delivered",
+    "orderDate": "2026-05-11T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-13T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-05-13T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-004",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Beef",
+        "quantity": 11,
+        "unitPrice": 18
+      },
+      {
+        "name": "Salmon",
+        "quantity": 29,
+        "unitPrice": 15
+      }
+    ],
+    "total": 633,
+    "status": "delivered",
+    "orderDate": "2026-05-11T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-15T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-05-15T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-005",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 57,
+        "unitPrice": 8
+      },
+      {
+        "name": "Beef",
+        "quantity": 14,
+        "unitPrice": 18
+      }
+    ],
+    "total": 708,
+    "status": "delivered",
+    "orderDate": "2026-05-12T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-16T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-05-17T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-006",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Bread",
+        "quantity": 56,
+        "unitPrice": 4
+      },
+      {
+        "name": "Oranges",
+        "quantity": 56,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Beef",
+        "quantity": 41,
+        "unitPrice": 18
+      }
+    ],
+    "total": 1085,
+    "status": "delivered",
+    "orderDate": "2026-05-12T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-14T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-14T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-007",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Shrimp",
+        "quantity": 20,
+        "unitPrice": 12
+      },
+      {
+        "name": "Salmon",
+        "quantity": 35,
+        "unitPrice": 15
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 41,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 47,
+        "unitPrice": 1.8
+      }
+    ],
+    "total": 952,
+    "status": "delivered",
+    "orderDate": "2026-05-12T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-16T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-17T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-008",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 52,
+        "unitPrice": 2
+      },
+      {
+        "name": "Eggs",
+        "quantity": 32,
+        "unitPrice": 5
+      }
+    ],
+    "total": 264,
+    "status": "delivered",
+    "orderDate": "2026-05-13T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-17T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-18T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-009",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Oranges",
+        "quantity": 53,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Eggs",
+        "quantity": 37,
+        "unitPrice": 5
+      }
+    ],
+    "total": 302,
+    "status": "delivered",
+    "orderDate": "2026-05-13T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-15T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-05-16T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-010",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Milk",
+        "quantity": 20,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 45,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 10,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 153,
+    "status": "cancelled",
+    "orderDate": "2026-05-14T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-19T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-011",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Milk",
+        "quantity": 56,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Beef",
+        "quantity": 37,
+        "unitPrice": 18
+      },
+      {
+        "name": "Bread",
+        "quantity": 46,
+        "unitPrice": 4
+      },
+      {
+        "name": "Salmon",
+        "quantity": 16,
+        "unitPrice": 15
+      }
+    ],
+    "total": 1286,
+    "status": "delivered",
+    "orderDate": "2026-05-14T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-18T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-18T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-012",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 56,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Cheese",
+        "quantity": 57,
+        "unitPrice": 8
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 43,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Beef",
+        "quantity": 51,
+        "unitPrice": 18
+      }
+    ],
+    "total": 1519,
+    "status": "delivered",
+    "orderDate": "2026-05-14T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-16T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-17T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-013",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 21,
+        "unitPrice": 8
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 19,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 58,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Chicken",
+        "quantity": 38,
+        "unitPrice": 12
+      }
+    ],
+    "total": 740,
+    "status": "delivered",
+    "orderDate": "2026-05-15T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-20T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-21T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-014",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Chicken",
+        "quantity": 35,
+        "unitPrice": 12
+      },
+      {
+        "name": "Oranges",
+        "quantity": 45,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Carrots",
+        "quantity": 44,
+        "unitPrice": 1.2
+      }
+    ],
+    "total": 572,
+    "status": "delivered",
+    "orderDate": "2026-05-15T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-17T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-17T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-015",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Potatoes",
+        "quantity": 41,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Beef",
+        "quantity": 54,
+        "unitPrice": 18
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 11,
+        "unitPrice": 12
+      },
+      {
+        "name": "Chicken",
+        "quantity": 33,
+        "unitPrice": 12
+      }
+    ],
+    "total": 1562,
+    "status": "delivered",
+    "orderDate": "2026-05-16T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-20T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-05-21T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-016",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 48,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 15,
+        "unitPrice": 12
+      }
+    ],
+    "total": 266,
+    "status": "delivered",
+    "orderDate": "2026-05-16T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-19T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-19T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-017",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 50,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 16,
+        "unitPrice": 2.5
+      }
+    ],
+    "total": 165,
+    "status": "cancelled",
+    "orderDate": "2026-05-17T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-20T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-018",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Chicken",
+        "quantity": 15,
+        "unitPrice": 12
+      },
+      {
+        "name": "Apples",
+        "quantity": 54,
+        "unitPrice": 2
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 14,
+        "unitPrice": 12
+      },
+      {
+        "name": "Milk",
+        "quantity": 51,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 635,
+    "status": "delivered",
+    "orderDate": "2026-05-17T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-21T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-05-21T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-019",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Onions",
+        "quantity": 52,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Beef",
+        "quantity": 27,
+        "unitPrice": 18
+      },
+      {
+        "name": "Salmon",
+        "quantity": 58,
+        "unitPrice": 15
+      }
+    ],
+    "total": 1398,
+    "status": "cancelled",
+    "orderDate": "2026-05-17T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-19T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-020",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Salmon",
+        "quantity": 25,
+        "unitPrice": 15
+      },
+      {
+        "name": "Milk",
+        "quantity": 11,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 414,
+    "status": "delivered",
+    "orderDate": "2026-05-18T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-20T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-05-20T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-021",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 25,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Oranges",
+        "quantity": 56,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Carrots",
+        "quantity": 14,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Salmon",
+        "quantity": 12,
+        "unitPrice": 15
+      }
+    ],
+    "total": 350,
+    "status": "delivered",
+    "orderDate": "2026-05-18T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-20T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-21T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-022",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 55,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 53,
+        "unitPrice": 12
+      },
+      {
+        "name": "Chicken",
+        "quantity": 50,
+        "unitPrice": 12
+      }
+    ],
+    "total": 1335,
+    "status": "delivered",
+    "orderDate": "2026-05-19T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-22T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-22T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-023",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 10,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Cheese",
+        "quantity": 52,
+        "unitPrice": 8
+      }
+    ],
+    "total": 441,
+    "status": "cancelled",
+    "orderDate": "2026-05-19T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-22T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-024",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Potatoes",
+        "quantity": 37,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Oranges",
+        "quantity": 51,
+        "unitPrice": 2.2
+      }
+    ],
+    "total": 168,
+    "status": "delivered",
+    "orderDate": "2026-05-19T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-23T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-05-23T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-025",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Eggs",
+        "quantity": 58,
+        "unitPrice": 5
+      },
+      {
+        "name": "Bread",
+        "quantity": 22,
+        "unitPrice": 4
+      }
+    ],
+    "total": 378,
+    "status": "delivered",
+    "orderDate": "2026-05-20T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-24T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-05-25T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-026",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 35,
+        "unitPrice": 8
+      },
+      {
+        "name": "Apples",
+        "quantity": 57,
+        "unitPrice": 2
+      },
+      {
+        "name": "Carrots",
+        "quantity": 23,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Milk",
+        "quantity": 26,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 513,
+    "status": "delivered",
+    "orderDate": "2026-05-20T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-23T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-05-24T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-027",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 43,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Eggs",
+        "quantity": 35,
+        "unitPrice": 5
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 19,
+        "unitPrice": 2.5
+      }
+    ],
+    "total": 330,
+    "status": "cancelled",
+    "orderDate": "2026-05-21T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-23T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-028",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 35,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Bread",
+        "quantity": 47,
+        "unitPrice": 4
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 15,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 274,
+    "status": "delivered",
+    "orderDate": "2026-05-21T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-23T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-05-23T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-029",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 54,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Beef",
+        "quantity": 55,
+        "unitPrice": 18
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 18,
+        "unitPrice": 12
+      },
+      {
+        "name": "Salmon",
+        "quantity": 16,
+        "unitPrice": 15
+      }
+    ],
+    "total": 1543,
+    "status": "delivered",
+    "orderDate": "2026-05-21T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-24T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-25T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-030",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 42,
+        "unitPrice": 8
+      },
+      {
+        "name": "Beef",
+        "quantity": 18,
+        "unitPrice": 18
+      },
+      {
+        "name": "Milk",
+        "quantity": 53,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 846,
+    "status": "delivered",
+    "orderDate": "2026-05-22T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-24T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-05-25T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-031",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Potatoes",
+        "quantity": 56,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Eggs",
+        "quantity": 33,
+        "unitPrice": 5
+      },
+      {
+        "name": "Salmon",
+        "quantity": 17,
+        "unitPrice": 15
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 57,
+        "unitPrice": 12
+      }
+    ],
+    "total": 1188,
+    "status": "delivered",
+    "orderDate": "2026-05-22T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-27T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-05-27T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-032",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Eggs",
+        "quantity": 32,
+        "unitPrice": 5
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 34,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 44,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 287,
+    "status": "delivered",
+    "orderDate": "2026-05-23T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-26T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-05-27T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-033",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 35,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Salmon",
+        "quantity": 49,
+        "unitPrice": 15
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 57,
+        "unitPrice": 12
+      },
+      {
+        "name": "Bread",
+        "quantity": 55,
+        "unitPrice": 4
+      }
+    ],
+    "total": 1681,
+    "status": "delivered",
+    "orderDate": "2026-05-23T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-25T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-25T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-034",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 11,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Salmon",
+        "quantity": 26,
+        "unitPrice": 15
+      }
+    ],
+    "total": 403,
+    "status": "delivered",
+    "orderDate": "2026-05-24T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-28T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-28T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-035",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Oranges",
+        "quantity": 40,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Cheese",
+        "quantity": 17,
+        "unitPrice": 8
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 11,
+        "unitPrice": 12
+      }
+    ],
+    "total": 356,
+    "status": "delivered",
+    "orderDate": "2026-05-24T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-29T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-30T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-036",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 17,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Oranges",
+        "quantity": 12,
+        "unitPrice": 2.2
+      }
+    ],
+    "total": 69,
+    "status": "delivered",
+    "orderDate": "2026-05-25T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-29T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-29T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-037",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 18,
+        "unitPrice": 2
+      },
+      {
+        "name": "Milk",
+        "quantity": 47,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 201,
+    "status": "delivered",
+    "orderDate": "2026-05-25T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-30T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-30T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-038",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 22,
+        "unitPrice": 2
+      },
+      {
+        "name": "Onions",
+        "quantity": 12,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Milk",
+        "quantity": 49,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 225,
+    "status": "delivered",
+    "orderDate": "2026-05-25T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-29T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-05-29T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-039",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 20,
+        "unitPrice": 8
+      },
+      {
+        "name": "Salmon",
+        "quantity": 44,
+        "unitPrice": 15
+      },
+      {
+        "name": "Eggs",
+        "quantity": 13,
+        "unitPrice": 5
+      },
+      {
+        "name": "Salmon",
+        "quantity": 59,
+        "unitPrice": 15
+      }
+    ],
+    "total": 1770,
+    "status": "delivered",
+    "orderDate": "2026-05-26T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-28T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-29T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-040",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 31,
+        "unitPrice": 8
+      },
+      {
+        "name": "Beef",
+        "quantity": 42,
+        "unitPrice": 18
+      }
+    ],
+    "total": 1004,
+    "status": "cancelled",
+    "orderDate": "2026-05-26T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-29T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-041",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 21,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Cheese",
+        "quantity": 32,
+        "unitPrice": 8
+      }
+    ],
+    "total": 309,
+    "status": "delivered",
+    "orderDate": "2026-05-26T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-28T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-29T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-042",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 45,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 57,
+        "unitPrice": 12
+      }
+    ],
+    "total": 738,
+    "status": "delivered",
+    "orderDate": "2026-05-27T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-01T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-043",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Shrimp",
+        "quantity": 13,
+        "unitPrice": 12
+      },
+      {
+        "name": "Apples",
+        "quantity": 49,
+        "unitPrice": 2
+      },
+      {
+        "name": "Beef",
+        "quantity": 39,
+        "unitPrice": 18
+      }
+    ],
+    "total": 956,
+    "status": "delivered",
+    "orderDate": "2026-05-27T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-30T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-05-31T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-044",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Potatoes",
+        "quantity": 49,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Cheese",
+        "quantity": 24,
+        "unitPrice": 8
+      },
+      {
+        "name": "Carrots",
+        "quantity": 23,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 32,
+        "unitPrice": 12
+      }
+    ],
+    "total": 677,
+    "status": "delivered",
+    "orderDate": "2026-05-28T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-01T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-045",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Potatoes",
+        "quantity": 30,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 15,
+        "unitPrice": 1.8
+      }
+    ],
+    "total": 72,
+    "status": "delivered",
+    "orderDate": "2026-05-28T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-05-31T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-05-31T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-046",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 37,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Bread",
+        "quantity": 36,
+        "unitPrice": 4
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 59,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 277,
+    "status": "delivered",
+    "orderDate": "2026-05-29T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-03T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-06-04T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-047",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 58,
+        "unitPrice": 2
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 25,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Chicken",
+        "quantity": 39,
+        "unitPrice": 12
+      }
+    ],
+    "total": 629,
+    "status": "delivered",
+    "orderDate": "2026-05-29T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-01T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-048",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 52,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Cheese",
+        "quantity": 53,
+        "unitPrice": 8
+      }
+    ],
+    "total": 518,
+    "status": "delivered",
+    "orderDate": "2026-05-29T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-01T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-06-02T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-049",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Beef",
+        "quantity": 12,
+        "unitPrice": 18
+      },
+      {
+        "name": "Chicken",
+        "quantity": 12,
+        "unitPrice": 12
+      }
+    ],
+    "total": 360,
+    "status": "delivered",
+    "orderDate": "2026-05-30T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-04T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-06-05T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-050",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Bread",
+        "quantity": 19,
+        "unitPrice": 4
+      },
+      {
+        "name": "Onions",
+        "quantity": 41,
+        "unitPrice": 0.8
+      }
+    ],
+    "total": 109,
+    "status": "delivered",
+    "orderDate": "2026-05-30T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-03T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-06-04T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-051",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 16,
+        "unitPrice": 8
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 51,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 20,
+        "unitPrice": 12
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 32,
+        "unitPrice": 2.5
+      }
+    ],
+    "total": 525,
+    "status": "delivered",
+    "orderDate": "2026-05-31T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-02T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-06-03T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-052",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Shrimp",
+        "quantity": 41,
+        "unitPrice": 12
+      },
+      {
+        "name": "Oranges",
+        "quantity": 35,
+        "unitPrice": 2.2
+      }
+    ],
+    "total": 569,
+    "status": "delivered",
+    "orderDate": "2026-05-31T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-05T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-06-05T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-053",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Milk",
+        "quantity": 18,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Bread",
+        "quantity": 59,
+        "unitPrice": 4
+      },
+      {
+        "name": "Oranges",
+        "quantity": 13,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Cheese",
+        "quantity": 15,
+        "unitPrice": 8
+      }
+    ],
+    "total": 448,
+    "status": "delivered",
+    "orderDate": "2026-06-01T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-05T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-054",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Onions",
+        "quantity": 50,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Bread",
+        "quantity": 36,
+        "unitPrice": 4
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 19,
+        "unitPrice": 12
+      }
+    ],
+    "total": 412,
+    "status": "delivered",
+    "orderDate": "2026-06-01T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-04T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-06-05T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-055",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Salmon",
+        "quantity": 55,
+        "unitPrice": 15
+      },
+      {
+        "name": "Cheese",
+        "quantity": 37,
+        "unitPrice": 8
+      },
+      {
+        "name": "Onions",
+        "quantity": 12,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Milk",
+        "quantity": 40,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 1271,
+    "status": "delivered",
+    "orderDate": "2026-06-01T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-03T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-06-04T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-056",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Chicken",
+        "quantity": 35,
+        "unitPrice": 12
+      },
+      {
+        "name": "Apples",
+        "quantity": 52,
+        "unitPrice": 2
+      }
+    ],
+    "total": 524,
+    "status": "delivered",
+    "orderDate": "2026-06-02T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-06T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-06-07T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-057",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Onions",
+        "quantity": 11,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Bread",
+        "quantity": 45,
+        "unitPrice": 4
+      }
+    ],
+    "total": 189,
+    "status": "delivered",
+    "orderDate": "2026-06-02T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-05T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-06-05T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-058",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Bread",
+        "quantity": 47,
+        "unitPrice": 4
+      },
+      {
+        "name": "Bread",
+        "quantity": 36,
+        "unitPrice": 4
+      },
+      {
+        "name": "Cheese",
+        "quantity": 17,
+        "unitPrice": 8
+      }
+    ],
+    "total": 468,
+    "status": "delivered",
+    "orderDate": "2026-06-03T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-06T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-059",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Potatoes",
+        "quantity": 57,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 53,
+        "unitPrice": 12
+      }
+    ],
+    "total": 722,
+    "status": "cancelled",
+    "orderDate": "2026-06-03T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-05T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-060",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 19,
+        "unitPrice": 8
+      },
+      {
+        "name": "Eggs",
+        "quantity": 36,
+        "unitPrice": 5
+      }
+    ],
+    "total": 332,
+    "status": "delivered",
+    "orderDate": "2026-06-04T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-09T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-06-09T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-061",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 19,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Milk",
+        "quantity": 48,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 216,
+    "status": "delivered",
+    "orderDate": "2026-06-04T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-07T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-06-08T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-062",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Milk",
+        "quantity": 23,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Salmon",
+        "quantity": 15,
+        "unitPrice": 15
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 20,
+        "unitPrice": 2.5
+      }
+    ],
+    "total": 356,
+    "status": "delivered",
+    "orderDate": "2026-06-05T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-08T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-06-08T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-063",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Milk",
+        "quantity": 29,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 40,
+        "unitPrice": 12
+      },
+      {
+        "name": "Onions",
+        "quantity": 16,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 24,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 630,
+    "status": "delivered",
+    "orderDate": "2026-06-05T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-08T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-06-09T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-064",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 38,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Bread",
+        "quantity": 54,
+        "unitPrice": 4
+      },
+      {
+        "name": "Milk",
+        "quantity": 36,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Bread",
+        "quantity": 47,
+        "unitPrice": 4
+      }
+    ],
+    "total": 576,
+    "status": "delivered",
+    "orderDate": "2026-06-06T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-10T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-06-11T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-065",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 50,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Beef",
+        "quantity": 59,
+        "unitPrice": 18
+      }
+    ],
+    "total": 1152,
+    "status": "delivered",
+    "orderDate": "2026-06-06T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-10T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-06-11T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-066",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 22,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 37,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 31,
+        "unitPrice": 1.8
+      }
+    ],
+    "total": 138,
+    "status": "cancelled",
+    "orderDate": "2026-06-07T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-11T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-067",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Salmon",
+        "quantity": 38,
+        "unitPrice": 15
+      },
+      {
+        "name": "Eggs",
+        "quantity": 24,
+        "unitPrice": 5
+      },
+      {
+        "name": "Chicken",
+        "quantity": 32,
+        "unitPrice": 12
+      },
+      {
+        "name": "Eggs",
+        "quantity": 21,
+        "unitPrice": 5
+      }
+    ],
+    "total": 1179,
+    "status": "delivered",
+    "orderDate": "2026-06-07T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-12T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-06-13T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-068",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 36,
+        "unitPrice": 8
+      },
+      {
+        "name": "Eggs",
+        "quantity": 57,
+        "unitPrice": 5
+      },
+      {
+        "name": "Onions",
+        "quantity": 41,
+        "unitPrice": 0.8
+      }
+    ],
+    "total": 606,
+    "status": "cancelled",
+    "orderDate": "2026-06-07T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-09T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-069",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 35,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Beef",
+        "quantity": 17,
+        "unitPrice": 18
+      },
+      {
+        "name": "Onions",
+        "quantity": 20,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 56,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 469,
+    "status": "cancelled",
+    "orderDate": "2026-06-08T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-13T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-070",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 21,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 12,
+        "unitPrice": 12
+      },
+      {
+        "name": "Bread",
+        "quantity": 16,
+        "unitPrice": 4
+      },
+      {
+        "name": "Beef",
+        "quantity": 31,
+        "unitPrice": 18
+      }
+    ],
+    "total": 819,
+    "status": "delivered",
+    "orderDate": "2026-06-08T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-13T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-06-13T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-071",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Potatoes",
+        "quantity": 55,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Carrots",
+        "quantity": 20,
+        "unitPrice": 1.2
+      }
+    ],
+    "total": 107,
+    "status": "delivered",
+    "orderDate": "2026-06-08T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-13T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-06-14T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-072",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Onions",
+        "quantity": 29,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Salmon",
+        "quantity": 59,
+        "unitPrice": 15
+      },
+      {
+        "name": "Beef",
+        "quantity": 30,
+        "unitPrice": 18
+      },
+      {
+        "name": "Milk",
+        "quantity": 26,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 1539,
+    "status": "delivered",
+    "orderDate": "2026-06-09T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-14T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-06-15T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-073",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Chicken",
+        "quantity": 35,
+        "unitPrice": 12
+      },
+      {
+        "name": "Cheese",
+        "quantity": 26,
+        "unitPrice": 8
+      }
+    ],
+    "total": 628,
+    "status": "delivered",
+    "orderDate": "2026-06-09T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-14T00:00:00.000Z",
+    "isAiScheduled": true,
+    "actualDeliveryDate": "2026-06-14T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-074",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 43,
+        "unitPrice": 2
+      },
+      {
+        "name": "Carrots",
+        "quantity": 36,
+        "unitPrice": 1.2
+      }
+    ],
+    "total": 129,
+    "status": "delivered",
+    "orderDate": "2026-06-09T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-12T00:00:00.000Z",
+    "isAiScheduled": false,
+    "actualDeliveryDate": "2026-06-12T00:00:00.000Z"
+  },
+  {
+    "id": "ORD-075",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Onions",
+        "quantity": 39,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 35,
+        "unitPrice": 12
+      },
+      {
+        "name": "Milk",
+        "quantity": 15,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 504,
+    "status": "scheduled",
+    "orderDate": "2026-06-10T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-12T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-076",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Milk",
+        "quantity": 40,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 18,
+        "unitPrice": 1.8
+      }
+    ],
+    "total": 172,
+    "status": "scheduled",
+    "orderDate": "2026-06-10T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-12T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-077",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Eggs",
+        "quantity": 57,
+        "unitPrice": 5
+      },
+      {
+        "name": "Oranges",
+        "quantity": 56,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Cheese",
+        "quantity": 33,
+        "unitPrice": 8
+      }
+    ],
+    "total": 672,
+    "status": "pending",
+    "orderDate": "2026-06-10T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-15T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-078",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Onions",
+        "quantity": 26,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Bread",
+        "quantity": 46,
+        "unitPrice": 4
+      },
+      {
+        "name": "Carrots",
+        "quantity": 38,
+        "unitPrice": 1.2
+      }
+    ],
+    "total": 250,
+    "status": "pending",
+    "orderDate": "2026-06-11T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-16T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-079",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Milk",
+        "quantity": 20,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Beef",
+        "quantity": 48,
+        "unitPrice": 18
+      },
+      {
+        "name": "Apples",
+        "quantity": 13,
+        "unitPrice": 2
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 41,
+        "unitPrice": 1.8
+      }
+    ],
+    "total": 1034,
+    "status": "confirmed",
+    "orderDate": "2026-06-11T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-14T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-080",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Onions",
+        "quantity": 28,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Eggs",
+        "quantity": 44,
+        "unitPrice": 5
+      },
+      {
+        "name": "Carrots",
+        "quantity": 34,
+        "unitPrice": 1.2
+      }
+    ],
+    "total": 283,
+    "status": "scheduled",
+    "orderDate": "2026-06-11T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-14T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-081",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Bread",
+        "quantity": 27,
+        "unitPrice": 4
+      },
+      {
+        "name": "Eggs",
+        "quantity": 54,
+        "unitPrice": 5
+      },
+      {
+        "name": "Milk",
+        "quantity": 59,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Oranges",
+        "quantity": 23,
+        "unitPrice": 2.2
+      }
+    ],
+    "total": 635,
+    "status": "scheduled",
+    "orderDate": "2026-06-12T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-15T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-082",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Oranges",
+        "quantity": 16,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Bread",
+        "quantity": 18,
+        "unitPrice": 4
+      }
+    ],
+    "total": 107,
+    "status": "scheduled",
+    "orderDate": "2026-06-12T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-15T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-083",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 35,
+        "unitPrice": 8
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 43,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 11,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 374,
+    "status": "scheduled",
+    "orderDate": "2026-06-12T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-15T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-084",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 15,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 40,
+        "unitPrice": 2.5
+      }
+    ],
+    "total": 118,
+    "status": "scheduled",
+    "orderDate": "2026-06-13T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-15T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-085",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 14,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Eggs",
+        "quantity": 34,
+        "unitPrice": 5
+      },
+      {
+        "name": "Oranges",
+        "quantity": 12,
+        "unitPrice": 2.2
+      }
+    ],
+    "total": 231,
+    "status": "pending",
+    "orderDate": "2026-06-13T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-18T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-086",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 35,
+        "unitPrice": 2
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 52,
+        "unitPrice": 12
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 58,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 43,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 904,
+    "status": "pending",
+    "orderDate": "2026-06-13T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-16T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-087",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Onions",
+        "quantity": 56,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Salmon",
+        "quantity": 14,
+        "unitPrice": 15
+      }
+    ],
+    "total": 255,
+    "status": "pending",
+    "orderDate": "2026-06-14T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-19T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-088",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Milk",
+        "quantity": 33,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Beef",
+        "quantity": 53,
+        "unitPrice": 18
+      }
+    ],
+    "total": 1070,
+    "status": "confirmed",
+    "orderDate": "2026-06-14T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-17T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-089",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Bread",
+        "quantity": 36,
+        "unitPrice": 4
+      },
+      {
+        "name": "Carrots",
+        "quantity": 53,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Cheese",
+        "quantity": 34,
+        "unitPrice": 8
+      }
+    ],
+    "total": 480,
+    "status": "confirmed",
+    "orderDate": "2026-06-15T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-20T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-090",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 53,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Beef",
+        "quantity": 21,
+        "unitPrice": 18
+      }
+    ],
+    "total": 442,
+    "status": "scheduled",
+    "orderDate": "2026-06-15T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-18T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-091",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 11,
+        "unitPrice": 8
+      },
+      {
+        "name": "Bread",
+        "quantity": 46,
+        "unitPrice": 4
+      },
+      {
+        "name": "Milk",
+        "quantity": 35,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 395,
+    "status": "scheduled",
+    "orderDate": "2026-06-16T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-18T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-092",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Milk",
+        "quantity": 43,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 21,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 58,
+        "unitPrice": 12
+      },
+      {
+        "name": "Chicken",
+        "quantity": 52,
+        "unitPrice": 12
+      }
+    ],
+    "total": 1508,
+    "status": "pending",
+    "orderDate": "2026-06-16T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-21T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-093",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Onions",
+        "quantity": 24,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 19,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Chicken",
+        "quantity": 58,
+        "unitPrice": 12
+      },
+      {
+        "name": "Eggs",
+        "quantity": 10,
+        "unitPrice": 5
+      }
+    ],
+    "total": 799,
+    "status": "confirmed",
+    "orderDate": "2026-06-17T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-21T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-094",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 46,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Salmon",
+        "quantity": 35,
+        "unitPrice": 15
+      }
+    ],
+    "total": 608,
+    "status": "scheduled",
+    "orderDate": "2026-06-17T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-21T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-095",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Bread",
+        "quantity": 17,
+        "unitPrice": 4
+      },
+      {
+        "name": "Beef",
+        "quantity": 34,
+        "unitPrice": 18
+      },
+      {
+        "name": "Apples",
+        "quantity": 36,
+        "unitPrice": 2
+      }
+    ],
+    "total": 752,
+    "status": "scheduled",
+    "orderDate": "2026-06-18T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-20T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-096",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 24,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Eggs",
+        "quantity": 48,
+        "unitPrice": 5
+      },
+      {
+        "name": "Bread",
+        "quantity": 23,
+        "unitPrice": 4
+      },
+      {
+        "name": "Cheese",
+        "quantity": 12,
+        "unitPrice": 8
+      }
+    ],
+    "total": 488,
+    "status": "pending",
+    "orderDate": "2026-06-18T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-22T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-097",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 36,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Onions",
+        "quantity": 34,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 15,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Beef",
+        "quantity": 32,
+        "unitPrice": 18
+      }
+    ],
+    "total": 669,
+    "status": "scheduled",
+    "orderDate": "2026-06-18T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-23T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-098",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 49,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Salmon",
+        "quantity": 58,
+        "unitPrice": 15
+      }
+    ],
+    "total": 958,
+    "status": "scheduled",
+    "orderDate": "2026-06-19T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-23T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-099",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Bread",
+        "quantity": 39,
+        "unitPrice": 4
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 35,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Oranges",
+        "quantity": 21,
+        "unitPrice": 2.2
+      }
+    ],
+    "total": 255,
+    "status": "scheduled",
+    "orderDate": "2026-06-19T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-24T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-100",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Potatoes",
+        "quantity": 33,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 15,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Chicken",
+        "quantity": 46,
+        "unitPrice": 12
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 55,
+        "unitPrice": 1.8
+      }
+    ],
+    "total": 728,
+    "status": "confirmed",
+    "orderDate": "2026-06-19T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-23T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-101",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 59,
+        "unitPrice": 8
+      },
+      {
+        "name": "Salmon",
+        "quantity": 34,
+        "unitPrice": 15
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 18,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Chicken",
+        "quantity": 18,
+        "unitPrice": 12
+      }
+    ],
+    "total": 1230,
+    "status": "confirmed",
+    "orderDate": "2026-06-20T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-23T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-102",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Oranges",
+        "quantity": 50,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 48,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 16,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 206,
+    "status": "scheduled",
+    "orderDate": "2026-06-20T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-25T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-103",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 22,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Milk",
+        "quantity": 51,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 234,
+    "status": "scheduled",
+    "orderDate": "2026-06-21T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-24T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-104",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Shrimp",
+        "quantity": 55,
+        "unitPrice": 12
+      },
+      {
+        "name": "Apples",
+        "quantity": 55,
+        "unitPrice": 2
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 54,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 44,
+        "unitPrice": 2.5
+      }
+    ],
+    "total": 977,
+    "status": "scheduled",
+    "orderDate": "2026-06-21T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-26T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-105",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 42,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Oranges",
+        "quantity": 41,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Beef",
+        "quantity": 26,
+        "unitPrice": 18
+      }
+    ],
+    "total": 634,
+    "status": "scheduled",
+    "orderDate": "2026-06-21T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-24T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-106",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Beef",
+        "quantity": 51,
+        "unitPrice": 18
+      },
+      {
+        "name": "Chicken",
+        "quantity": 24,
+        "unitPrice": 12
+      }
+    ],
+    "total": 1206,
+    "status": "scheduled",
+    "orderDate": "2026-06-22T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-26T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-107",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Milk",
+        "quantity": 27,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Carrots",
+        "quantity": 55,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 56,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 245,
+    "status": "pending",
+    "orderDate": "2026-06-22T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-24T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-108",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 46,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 57,
+        "unitPrice": 1.8
+      }
+    ],
+    "total": 158,
+    "status": "scheduled",
+    "orderDate": "2026-06-22T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-26T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-109",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Salmon",
+        "quantity": 41,
+        "unitPrice": 15
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 44,
+        "unitPrice": 2.5
+      }
+    ],
+    "total": 725,
+    "status": "confirmed",
+    "orderDate": "2026-06-23T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-26T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-110",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Beef",
+        "quantity": 15,
+        "unitPrice": 18
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 19,
+        "unitPrice": 12
+      },
+      {
+        "name": "Chicken",
+        "quantity": 55,
+        "unitPrice": 12
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 11,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 1175,
+    "status": "confirmed",
+    "orderDate": "2026-06-23T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-28T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-111",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 43,
+        "unitPrice": 8
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 36,
+        "unitPrice": 12
+      }
+    ],
+    "total": 776,
+    "status": "confirmed",
+    "orderDate": "2026-06-23T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-26T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-112",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Beef",
+        "quantity": 21,
+        "unitPrice": 18
+      },
+      {
+        "name": "Eggs",
+        "quantity": 31,
+        "unitPrice": 5
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 19,
+        "unitPrice": 1.8
+      }
+    ],
+    "total": 567,
+    "status": "pending",
+    "orderDate": "2026-06-24T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-29T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-113",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 38,
+        "unitPrice": 8
+      },
+      {
+        "name": "Oranges",
+        "quantity": 53,
+        "unitPrice": 2.2
+      }
+    ],
+    "total": 421,
+    "status": "pending",
+    "orderDate": "2026-06-24T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-28T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-114",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 50,
+        "unitPrice": 2
+      },
+      {
+        "name": "Carrots",
+        "quantity": 25,
+        "unitPrice": 1.2
+      }
+    ],
+    "total": 130,
+    "status": "pending",
+    "orderDate": "2026-06-24T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-28T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-115",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Salmon",
+        "quantity": 14,
+        "unitPrice": 15
+      },
+      {
+        "name": "Cheese",
+        "quantity": 28,
+        "unitPrice": 8
+      }
+    ],
+    "total": 434,
+    "status": "scheduled",
+    "orderDate": "2026-06-25T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-28T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-116",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 49,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Apples",
+        "quantity": 51,
+        "unitPrice": 2
+      },
+      {
+        "name": "Oranges",
+        "quantity": 59,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Bread",
+        "quantity": 14,
+        "unitPrice": 4
+      }
+    ],
+    "total": 410,
+    "status": "pending",
+    "orderDate": "2026-06-25T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-29T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-117",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 57,
+        "unitPrice": 8
+      },
+      {
+        "name": "Oranges",
+        "quantity": 56,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Beef",
+        "quantity": 31,
+        "unitPrice": 18
+      },
+      {
+        "name": "Milk",
+        "quantity": 23,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 1218,
+    "status": "confirmed",
+    "orderDate": "2026-06-26T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-29T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-118",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Salmon",
+        "quantity": 36,
+        "unitPrice": 15
+      },
+      {
+        "name": "Milk",
+        "quantity": 53,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 726,
+    "status": "pending",
+    "orderDate": "2026-06-26T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-29T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-119",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 53,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Milk",
+        "quantity": 17,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 155,
+    "status": "scheduled",
+    "orderDate": "2026-06-27T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-06-30T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-120",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Salmon",
+        "quantity": 59,
+        "unitPrice": 15
+      },
+      {
+        "name": "Salmon",
+        "quantity": 45,
+        "unitPrice": 15
+      }
+    ],
+    "total": 1560,
+    "status": "scheduled",
+    "orderDate": "2026-06-27T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-01T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-121",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 37,
+        "unitPrice": 8
+      },
+      {
+        "name": "Cheese",
+        "quantity": 24,
+        "unitPrice": 8
+      },
+      {
+        "name": "Salmon",
+        "quantity": 29,
+        "unitPrice": 15
+      },
+      {
+        "name": "Bread",
+        "quantity": 18,
+        "unitPrice": 4
+      }
+    ],
+    "total": 995,
+    "status": "confirmed",
+    "orderDate": "2026-06-28T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-03T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-122",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 45,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Cheese",
+        "quantity": 26,
+        "unitPrice": 8
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 46,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 390,
+    "status": "scheduled",
+    "orderDate": "2026-06-28T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-02T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-123",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 47,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Cheese",
+        "quantity": 28,
+        "unitPrice": 8
+      }
+    ],
+    "total": 342,
+    "status": "scheduled",
+    "orderDate": "2026-06-29T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-01T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-124",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 17,
+        "unitPrice": 8
+      },
+      {
+        "name": "Eggs",
+        "quantity": 54,
+        "unitPrice": 5
+      },
+      {
+        "name": "Apples",
+        "quantity": 27,
+        "unitPrice": 2
+      },
+      {
+        "name": "Carrots",
+        "quantity": 41,
+        "unitPrice": 1.2
+      }
+    ],
+    "total": 509,
+    "status": "confirmed",
+    "orderDate": "2026-06-29T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-03T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-125",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 58,
+        "unitPrice": 8
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 18,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 19,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 538,
+    "status": "pending",
+    "orderDate": "2026-06-29T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-04T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-126",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 39,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Beef",
+        "quantity": 22,
+        "unitPrice": 18
+      }
+    ],
+    "total": 466,
+    "status": "confirmed",
+    "orderDate": "2026-06-30T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-02T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-127",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 49,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Bread",
+        "quantity": 38,
+        "unitPrice": 4
+      },
+      {
+        "name": "Apples",
+        "quantity": 35,
+        "unitPrice": 2
+      }
+    ],
+    "total": 310,
+    "status": "scheduled",
+    "orderDate": "2026-06-30T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-05T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-128",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Potatoes",
+        "quantity": 10,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Cheese",
+        "quantity": 45,
+        "unitPrice": 8
+      },
+      {
+        "name": "Milk",
+        "quantity": 35,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 498,
+    "status": "scheduled",
+    "orderDate": "2026-07-01T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-04T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-129",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 35,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 49,
+        "unitPrice": 12
+      },
+      {
+        "name": "Cheese",
+        "quantity": 58,
+        "unitPrice": 8
+      }
+    ],
+    "total": 1115,
+    "status": "confirmed",
+    "orderDate": "2026-07-01T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-03T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-130",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Beef",
+        "quantity": 43,
+        "unitPrice": 18
+      },
+      {
+        "name": "Eggs",
+        "quantity": 42,
+        "unitPrice": 5
+      },
+      {
+        "name": "Salmon",
+        "quantity": 45,
+        "unitPrice": 15
+      },
+      {
+        "name": "Eggs",
+        "quantity": 25,
+        "unitPrice": 5
+      }
+    ],
+    "total": 1784,
+    "status": "pending",
+    "orderDate": "2026-07-01T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-05T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-131",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Oranges",
+        "quantity": 12,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Salmon",
+        "quantity": 13,
+        "unitPrice": 15
+      },
+      {
+        "name": "Salmon",
+        "quantity": 18,
+        "unitPrice": 15
+      }
+    ],
+    "total": 491,
+    "status": "scheduled",
+    "orderDate": "2026-07-02T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-06T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-132",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 34,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Bread",
+        "quantity": 45,
+        "unitPrice": 4
+      }
+    ],
+    "total": 221,
+    "status": "confirmed",
+    "orderDate": "2026-07-02T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-07T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-133",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 46,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Onions",
+        "quantity": 49,
+        "unitPrice": 0.8
+      }
+    ],
+    "total": 94,
+    "status": "confirmed",
+    "orderDate": "2026-07-03T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-07T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-134",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Beef",
+        "quantity": 44,
+        "unitPrice": 18
+      },
+      {
+        "name": "Carrots",
+        "quantity": 24,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Salmon",
+        "quantity": 43,
+        "unitPrice": 15
+      }
+    ],
+    "total": 1466,
+    "status": "pending",
+    "orderDate": "2026-07-03T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-05T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-135",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Shrimp",
+        "quantity": 45,
+        "unitPrice": 12
+      },
+      {
+        "name": "Carrots",
+        "quantity": 52,
+        "unitPrice": 1.2
+      }
+    ],
+    "total": 602,
+    "status": "scheduled",
+    "orderDate": "2026-07-03T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-08T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-136",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Oranges",
+        "quantity": 28,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Salmon",
+        "quantity": 40,
+        "unitPrice": 15
+      }
+    ],
+    "total": 662,
+    "status": "confirmed",
+    "orderDate": "2026-07-04T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-08T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-137",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Eggs",
+        "quantity": 43,
+        "unitPrice": 5
+      },
+      {
+        "name": "Apples",
+        "quantity": 27,
+        "unitPrice": 2
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 12,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 287,
+    "status": "scheduled",
+    "orderDate": "2026-07-04T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-06T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-138",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Chicken",
+        "quantity": 21,
+        "unitPrice": 12
+      },
+      {
+        "name": "Milk",
+        "quantity": 33,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 368,
+    "status": "confirmed",
+    "orderDate": "2026-07-05T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-10T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-139",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 32,
+        "unitPrice": 2
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 31,
+        "unitPrice": 1.8
+      }
+    ],
+    "total": 120,
+    "status": "pending",
+    "orderDate": "2026-07-05T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-09T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-140",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Chicken",
+        "quantity": 26,
+        "unitPrice": 12
+      },
+      {
+        "name": "Apples",
+        "quantity": 11,
+        "unitPrice": 2
+      },
+      {
+        "name": "Cheese",
+        "quantity": 38,
+        "unitPrice": 8
+      }
+    ],
+    "total": 638,
+    "status": "scheduled",
+    "orderDate": "2026-07-05T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-08T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-141",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 15,
+        "unitPrice": 8
+      },
+      {
+        "name": "Cheese",
+        "quantity": 13,
+        "unitPrice": 8
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 35,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Carrots",
+        "quantity": 17,
+        "unitPrice": 1.2
+      }
+    ],
+    "total": 307,
+    "status": "scheduled",
+    "orderDate": "2026-07-06T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-10T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-142",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Salmon",
+        "quantity": 51,
+        "unitPrice": 15
+      },
+      {
+        "name": "Milk",
+        "quantity": 44,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 28,
+        "unitPrice": 1.8
+      }
+    ],
+    "total": 969,
+    "status": "scheduled",
+    "orderDate": "2026-07-06T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-09T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-143",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Beef",
+        "quantity": 47,
+        "unitPrice": 18
+      },
+      {
+        "name": "Bread",
+        "quantity": 53,
+        "unitPrice": 4
+      },
+      {
+        "name": "Carrots",
+        "quantity": 36,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Salmon",
+        "quantity": 56,
+        "unitPrice": 15
+      }
+    ],
+    "total": 1941,
+    "status": "confirmed",
+    "orderDate": "2026-07-06T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-11T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-144",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Potatoes",
+        "quantity": 34,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Eggs",
+        "quantity": 13,
+        "unitPrice": 5
+      }
+    ],
+    "total": 116,
+    "status": "pending",
+    "orderDate": "2026-07-07T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-09T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-145",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 13,
+        "unitPrice": 2
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 41,
+        "unitPrice": 12
+      }
+    ],
+    "total": 518,
+    "status": "pending",
+    "orderDate": "2026-07-07T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-10T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-146",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Eggs",
+        "quantity": 55,
+        "unitPrice": 5
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 53,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Milk",
+        "quantity": 18,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Milk",
+        "quantity": 23,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 551,
+    "status": "scheduled",
+    "orderDate": "2026-07-08T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-11T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-147",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 32,
+        "unitPrice": 2
+      },
+      {
+        "name": "Milk",
+        "quantity": 37,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Beef",
+        "quantity": 39,
+        "unitPrice": 18
+      }
+    ],
+    "total": 896,
+    "status": "pending",
+    "orderDate": "2026-07-08T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-11T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-148",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 19,
+        "unitPrice": 8
+      },
+      {
+        "name": "Eggs",
+        "quantity": 22,
+        "unitPrice": 5
+      },
+      {
+        "name": "Beef",
+        "quantity": 41,
+        "unitPrice": 18
+      },
+      {
+        "name": "Milk",
+        "quantity": 46,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 1161,
+    "status": "scheduled",
+    "orderDate": "2026-07-09T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-14T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-149",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 18,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 40,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Apples",
+        "quantity": 47,
+        "unitPrice": 2
+      }
+    ],
+    "total": 226,
+    "status": "scheduled",
+    "orderDate": "2026-07-09T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-11T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-150",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 50,
+        "unitPrice": 8
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 18,
+        "unitPrice": 12
+      }
+    ],
+    "total": 616,
+    "status": "scheduled",
+    "orderDate": "2026-07-09T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-13T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-151",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Salmon",
+        "quantity": 50,
+        "unitPrice": 15
+      },
+      {
+        "name": "Oranges",
+        "quantity": 44,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Oranges",
+        "quantity": 49,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Carrots",
+        "quantity": 40,
+        "unitPrice": 1.2
+      }
+    ],
+    "total": 1003,
+    "status": "scheduled",
+    "orderDate": "2026-07-10T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-13T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-152",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Salmon",
+        "quantity": 15,
+        "unitPrice": 15
+      },
+      {
+        "name": "Apples",
+        "quantity": 22,
+        "unitPrice": 2
+      },
+      {
+        "name": "Carrots",
+        "quantity": 19,
+        "unitPrice": 1.2
+      }
+    ],
+    "total": 292,
+    "status": "scheduled",
+    "orderDate": "2026-07-10T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-12T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-153",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Salmon",
+        "quantity": 37,
+        "unitPrice": 15
+      },
+      {
+        "name": "Bread",
+        "quantity": 34,
+        "unitPrice": 4
+      },
+      {
+        "name": "Onions",
+        "quantity": 20,
+        "unitPrice": 0.8
+      }
+    ],
+    "total": 707,
+    "status": "pending",
+    "orderDate": "2026-07-11T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-13T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-154",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Oranges",
+        "quantity": 58,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 46,
+        "unitPrice": 1.8
+      }
+    ],
+    "total": 210,
+    "status": "confirmed",
+    "orderDate": "2026-07-11T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-14T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-155",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 35,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Salmon",
+        "quantity": 55,
+        "unitPrice": 15
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 24,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 924,
+    "status": "pending",
+    "orderDate": "2026-07-12T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-16T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-156",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Bread",
+        "quantity": 49,
+        "unitPrice": 4
+      },
+      {
+        "name": "Chicken",
+        "quantity": 25,
+        "unitPrice": 12
+      },
+      {
+        "name": "Carrots",
+        "quantity": 49,
+        "unitPrice": 1.2
+      }
+    ],
+    "total": 555,
+    "status": "scheduled",
+    "orderDate": "2026-07-12T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-16T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-157",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Shrimp",
+        "quantity": 55,
+        "unitPrice": 12
+      },
+      {
+        "name": "Cheese",
+        "quantity": 31,
+        "unitPrice": 8
+      }
+    ],
+    "total": 908,
+    "status": "pending",
+    "orderDate": "2026-07-13T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-15T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-158",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Beef",
+        "quantity": 30,
+        "unitPrice": 18
+      },
+      {
+        "name": "Beef",
+        "quantity": 17,
+        "unitPrice": 18
+      },
+      {
+        "name": "Carrots",
+        "quantity": 24,
+        "unitPrice": 1.2
+      }
+    ],
+    "total": 875,
+    "status": "confirmed",
+    "orderDate": "2026-07-13T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-17T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-159",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 22,
+        "unitPrice": 2
+      },
+      {
+        "name": "Salmon",
+        "quantity": 31,
+        "unitPrice": 15
+      },
+      {
+        "name": "Bread",
+        "quantity": 21,
+        "unitPrice": 4
+      }
+    ],
+    "total": 593,
+    "status": "confirmed",
+    "orderDate": "2026-07-13T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-17T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-160",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Eggs",
+        "quantity": 26,
+        "unitPrice": 5
+      },
+      {
+        "name": "Chicken",
+        "quantity": 40,
+        "unitPrice": 12
+      }
+    ],
+    "total": 610,
+    "status": "scheduled",
+    "orderDate": "2026-07-14T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-18T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-161",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Chicken",
+        "quantity": 40,
+        "unitPrice": 12
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 20,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 510,
+    "status": "pending",
+    "orderDate": "2026-07-14T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-18T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-162",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 12,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Milk",
+        "quantity": 44,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Onions",
+        "quantity": 33,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Bread",
+        "quantity": 28,
+        "unitPrice": 4
+      }
+    ],
+    "total": 307,
+    "status": "pending",
+    "orderDate": "2026-07-15T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-17T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-163",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Bread",
+        "quantity": 36,
+        "unitPrice": 4
+      },
+      {
+        "name": "Apples",
+        "quantity": 58,
+        "unitPrice": 2
+      }
+    ],
+    "total": 260,
+    "status": "scheduled",
+    "orderDate": "2026-07-15T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-17T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-164",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 39,
+        "unitPrice": 2
+      },
+      {
+        "name": "Bread",
+        "quantity": 30,
+        "unitPrice": 4
+      },
+      {
+        "name": "Onions",
+        "quantity": 12,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Beef",
+        "quantity": 25,
+        "unitPrice": 18
+      }
+    ],
+    "total": 658,
+    "status": "scheduled",
+    "orderDate": "2026-07-16T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-19T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-165",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 27,
+        "unitPrice": 2
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 23,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 17,
+        "unitPrice": 12
+      },
+      {
+        "name": "Apples",
+        "quantity": 39,
+        "unitPrice": 2
+      }
+    ],
+    "total": 394,
+    "status": "scheduled",
+    "orderDate": "2026-07-16T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-20T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-166",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Beef",
+        "quantity": 49,
+        "unitPrice": 18
+      },
+      {
+        "name": "Onions",
+        "quantity": 30,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 42,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 969,
+    "status": "confirmed",
+    "orderDate": "2026-07-17T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-19T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-167",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Shrimp",
+        "quantity": 52,
+        "unitPrice": 12
+      },
+      {
+        "name": "Oranges",
+        "quantity": 18,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Milk",
+        "quantity": 46,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 56,
+        "unitPrice": 2.5
+      }
+    ],
+    "total": 965,
+    "status": "scheduled",
+    "orderDate": "2026-07-17T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-22T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-168",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Eggs",
+        "quantity": 15,
+        "unitPrice": 5
+      },
+      {
+        "name": "Apples",
+        "quantity": 12,
+        "unitPrice": 2
+      },
+      {
+        "name": "Apples",
+        "quantity": 48,
+        "unitPrice": 2
+      },
+      {
+        "name": "Bread",
+        "quantity": 20,
+        "unitPrice": 4
+      }
+    ],
+    "total": 275,
+    "status": "confirmed",
+    "orderDate": "2026-07-18T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-22T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-169",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Shrimp",
+        "quantity": 45,
+        "unitPrice": 12
+      },
+      {
+        "name": "Chicken",
+        "quantity": 10,
+        "unitPrice": 12
+      },
+      {
+        "name": "Beef",
+        "quantity": 54,
+        "unitPrice": 18
+      },
+      {
+        "name": "Salmon",
+        "quantity": 23,
+        "unitPrice": 15
+      }
+    ],
+    "total": 1977,
+    "status": "confirmed",
+    "orderDate": "2026-07-18T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-20T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-170",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 13,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 16,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Apples",
+        "quantity": 43,
+        "unitPrice": 2
+      }
+    ],
+    "total": 147,
+    "status": "scheduled",
+    "orderDate": "2026-07-19T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-23T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-171",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 38,
+        "unitPrice": 2
+      },
+      {
+        "name": "Milk",
+        "quantity": 54,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 265,
+    "status": "confirmed",
+    "orderDate": "2026-07-19T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-24T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-172",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Eggs",
+        "quantity": 53,
+        "unitPrice": 5
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 16,
+        "unitPrice": 12
+      }
+    ],
+    "total": 457,
+    "status": "pending",
+    "orderDate": "2026-07-19T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-21T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-173",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Beef",
+        "quantity": 38,
+        "unitPrice": 18
+      },
+      {
+        "name": "Chicken",
+        "quantity": 18,
+        "unitPrice": 12
+      },
+      {
+        "name": "Eggs",
+        "quantity": 44,
+        "unitPrice": 5
+      }
+    ],
+    "total": 1120,
+    "status": "scheduled",
+    "orderDate": "2026-07-20T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-25T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-174",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 10,
+        "unitPrice": 2
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 32,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Carrots",
+        "quantity": 45,
+        "unitPrice": 1.2
+      }
+    ],
+    "total": 154,
+    "status": "scheduled",
+    "orderDate": "2026-07-20T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-24T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-175",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Oranges",
+        "quantity": 38,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Milk",
+        "quantity": 20,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 154,
+    "status": "confirmed",
+    "orderDate": "2026-07-20T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-25T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-176",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 54,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Salmon",
+        "quantity": 36,
+        "unitPrice": 15
+      },
+      {
+        "name": "Oranges",
+        "quantity": 46,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Oranges",
+        "quantity": 19,
+        "unitPrice": 2.2
+      }
+    ],
+    "total": 818,
+    "status": "pending",
+    "orderDate": "2026-07-21T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-23T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-177",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Oranges",
+        "quantity": 19,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Cheese",
+        "quantity": 53,
+        "unitPrice": 8
+      },
+      {
+        "name": "Apples",
+        "quantity": 27,
+        "unitPrice": 2
+      }
+    ],
+    "total": 520,
+    "status": "confirmed",
+    "orderDate": "2026-07-21T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-23T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-178",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Shrimp",
+        "quantity": 46,
+        "unitPrice": 12
+      },
+      {
+        "name": "Carrots",
+        "quantity": 10,
+        "unitPrice": 1.2
+      }
+    ],
+    "total": 564,
+    "status": "pending",
+    "orderDate": "2026-07-22T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-27T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-179",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 37,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Beef",
+        "quantity": 31,
+        "unitPrice": 18
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 35,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Salmon",
+        "quantity": 30,
+        "unitPrice": 15
+      }
+    ],
+    "total": 1138,
+    "status": "scheduled",
+    "orderDate": "2026-07-22T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-25T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-180",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Onions",
+        "quantity": 45,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Chicken",
+        "quantity": 33,
+        "unitPrice": 12
+      }
+    ],
+    "total": 432,
+    "status": "pending",
+    "orderDate": "2026-07-22T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-26T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-181",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Shrimp",
+        "quantity": 20,
+        "unitPrice": 12
+      },
+      {
+        "name": "Bread",
+        "quantity": 55,
+        "unitPrice": 4
+      }
+    ],
+    "total": 460,
+    "status": "pending",
+    "orderDate": "2026-07-23T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-28T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-182",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 23,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Salmon",
+        "quantity": 50,
+        "unitPrice": 15
+      },
+      {
+        "name": "Chicken",
+        "quantity": 17,
+        "unitPrice": 12
+      },
+      {
+        "name": "Eggs",
+        "quantity": 41,
+        "unitPrice": 5
+      }
+    ],
+    "total": 1187,
+    "status": "confirmed",
+    "orderDate": "2026-07-23T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-26T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-183",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 47,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Bread",
+        "quantity": 44,
+        "unitPrice": 4
+      }
+    ],
+    "total": 261,
+    "status": "pending",
+    "orderDate": "2026-07-23T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-25T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-184",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 59,
+        "unitPrice": 8
+      },
+      {
+        "name": "Chicken",
+        "quantity": 39,
+        "unitPrice": 12
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 37,
+        "unitPrice": 2.5
+      }
+    ],
+    "total": 1033,
+    "status": "scheduled",
+    "orderDate": "2026-07-24T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-29T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-185",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Salmon",
+        "quantity": 27,
+        "unitPrice": 15
+      },
+      {
+        "name": "Apples",
+        "quantity": 59,
+        "unitPrice": 2
+      },
+      {
+        "name": "Beef",
+        "quantity": 35,
+        "unitPrice": 18
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 16,
+        "unitPrice": 2.5
+      }
+    ],
+    "total": 1193,
+    "status": "pending",
+    "orderDate": "2026-07-24T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-28T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-186",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 19,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Oranges",
+        "quantity": 51,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Onions",
+        "quantity": 34,
+        "unitPrice": 0.8
+      }
+    ],
+    "total": 187,
+    "status": "scheduled",
+    "orderDate": "2026-07-24T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-29T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-187",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Onions",
+        "quantity": 46,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 44,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 103,
+    "status": "confirmed",
+    "orderDate": "2026-07-25T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-30T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-188",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Beef",
+        "quantity": 26,
+        "unitPrice": 18
+      },
+      {
+        "name": "Cheese",
+        "quantity": 30,
+        "unitPrice": 8
+      },
+      {
+        "name": "Milk",
+        "quantity": 34,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Onions",
+        "quantity": 18,
+        "unitPrice": 0.8
+      }
+    ],
+    "total": 841,
+    "status": "scheduled",
+    "orderDate": "2026-07-25T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-30T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-189",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Onions",
+        "quantity": 27,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 56,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Salmon",
+        "quantity": 29,
+        "unitPrice": 15
+      },
+      {
+        "name": "Milk",
+        "quantity": 34,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 716,
+    "status": "scheduled",
+    "orderDate": "2026-07-26T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-31T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-190",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Potatoes",
+        "quantity": 56,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Oranges",
+        "quantity": 24,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Carrots",
+        "quantity": 24,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Milk",
+        "quantity": 42,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 313,
+    "status": "pending",
+    "orderDate": "2026-07-26T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-31T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-191",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Salmon",
+        "quantity": 54,
+        "unitPrice": 15
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 49,
+        "unitPrice": 12
+      }
+    ],
+    "total": 1398,
+    "status": "pending",
+    "orderDate": "2026-07-27T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-01T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-192",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Milk",
+        "quantity": 35,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 45,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 190,
+    "status": "pending",
+    "orderDate": "2026-07-27T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-01T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-193",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 37,
+        "unitPrice": 2
+      },
+      {
+        "name": "Beef",
+        "quantity": 45,
+        "unitPrice": 18
+      },
+      {
+        "name": "Salmon",
+        "quantity": 36,
+        "unitPrice": 15
+      }
+    ],
+    "total": 1424,
+    "status": "confirmed",
+    "orderDate": "2026-07-28T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-30T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-194",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 34,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Bread",
+        "quantity": 30,
+        "unitPrice": 4
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 51,
+        "unitPrice": 1.8
+      }
+    ],
+    "total": 273,
+    "status": "scheduled",
+    "orderDate": "2026-07-28T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-07-31T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-195",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 28,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Potatoes",
+        "quantity": 45,
+        "unitPrice": 1.5
+      }
+    ],
+    "total": 118,
+    "status": "scheduled",
+    "orderDate": "2026-07-28T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-01T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-196",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Potatoes",
+        "quantity": 11,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Salmon",
+        "quantity": 36,
+        "unitPrice": 15
+      },
+      {
+        "name": "Chicken",
+        "quantity": 41,
+        "unitPrice": 12
+      }
+    ],
+    "total": 1049,
+    "status": "pending",
+    "orderDate": "2026-07-29T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-03T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-197",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 14,
+        "unitPrice": 2
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 21,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Apples",
+        "quantity": 14,
+        "unitPrice": 2
+      },
+      {
+        "name": "Oranges",
+        "quantity": 17,
+        "unitPrice": 2.2
+      }
+    ],
+    "total": 131,
+    "status": "scheduled",
+    "orderDate": "2026-07-29T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-01T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-198",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Eggs",
+        "quantity": 26,
+        "unitPrice": 5
+      },
+      {
+        "name": "Cheese",
+        "quantity": 39,
+        "unitPrice": 8
+      }
+    ],
+    "total": 442,
+    "status": "confirmed",
+    "orderDate": "2026-07-30T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-01T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-199",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 47,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Chicken",
+        "quantity": 38,
+        "unitPrice": 12
+      }
+    ],
+    "total": 541,
+    "status": "scheduled",
+    "orderDate": "2026-07-30T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-04T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-200",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Oranges",
+        "quantity": 58,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Eggs",
+        "quantity": 20,
+        "unitPrice": 5
+      }
+    ],
+    "total": 228,
+    "status": "scheduled",
+    "orderDate": "2026-07-30T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-03T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-201",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 33,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Chicken",
+        "quantity": 10,
+        "unitPrice": 12
+      }
+    ],
+    "total": 203,
+    "status": "pending",
+    "orderDate": "2026-07-31T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-05T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-202",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Lettuce",
+        "quantity": 32,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Beef",
+        "quantity": 56,
+        "unitPrice": 18
+      },
+      {
+        "name": "Beef",
+        "quantity": 46,
+        "unitPrice": 18
+      }
+    ],
+    "total": 1894,
+    "status": "scheduled",
+    "orderDate": "2026-07-31T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-02T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-203",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Chicken",
+        "quantity": 26,
+        "unitPrice": 12
+      },
+      {
+        "name": "Carrots",
+        "quantity": 47,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Oranges",
+        "quantity": 13,
+        "unitPrice": 2.2
+      }
+    ],
+    "total": 397,
+    "status": "confirmed",
+    "orderDate": "2026-07-31T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-04T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-204",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 26,
+        "unitPrice": 8
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 35,
+        "unitPrice": 12
+      },
+      {
+        "name": "Bread",
+        "quantity": 27,
+        "unitPrice": 4
+      },
+      {
+        "name": "Milk",
+        "quantity": 10,
+        "unitPrice": 3.5
+      }
+    ],
+    "total": 771,
+    "status": "confirmed",
+    "orderDate": "2026-08-01T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-06T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-205",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 27,
+        "unitPrice": 8
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 41,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 33,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Apples",
+        "quantity": 13,
+        "unitPrice": 2
+      }
+    ],
+    "total": 404,
+    "status": "scheduled",
+    "orderDate": "2026-08-01T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-06T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-206",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Eggs",
+        "quantity": 41,
+        "unitPrice": 5
+      },
+      {
+        "name": "Beef",
+        "quantity": 22,
+        "unitPrice": 18
+      }
+    ],
+    "total": 601,
+    "status": "scheduled",
+    "orderDate": "2026-08-01T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-06T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-207",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 24,
+        "unitPrice": 2
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 15,
+        "unitPrice": 12
+      }
+    ],
+    "total": 228,
+    "status": "scheduled",
+    "orderDate": "2026-08-02T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-07T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-208",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 19,
+        "unitPrice": 2
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 22,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 24,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Oranges",
+        "quantity": 40,
+        "unitPrice": 2.2
+      }
+    ],
+    "total": 241,
+    "status": "pending",
+    "orderDate": "2026-08-02T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-06T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-209",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Potatoes",
+        "quantity": 19,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Milk",
+        "quantity": 24,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 14,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Eggs",
+        "quantity": 45,
+        "unitPrice": 5
+      }
+    ],
+    "total": 373,
+    "status": "scheduled",
+    "orderDate": "2026-08-03T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-07T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-210",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 15,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Chicken",
+        "quantity": 43,
+        "unitPrice": 12
+      }
+    ],
+    "total": 534,
+    "status": "scheduled",
+    "orderDate": "2026-08-03T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-06T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-211",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Beef",
+        "quantity": 54,
+        "unitPrice": 18
+      },
+      {
+        "name": "Beef",
+        "quantity": 57,
+        "unitPrice": 18
+      },
+      {
+        "name": "Beef",
+        "quantity": 39,
+        "unitPrice": 18
+      },
+      {
+        "name": "Apples",
+        "quantity": 11,
+        "unitPrice": 2
+      }
+    ],
+    "total": 2722,
+    "status": "scheduled",
+    "orderDate": "2026-08-03T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-06T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-212",
+    "supplier": "Organic Farms Direct",
+    "items": [
+      {
+        "name": "Beef",
+        "quantity": 50,
+        "unitPrice": 18
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 48,
+        "unitPrice": 2.5
+      }
+    ],
+    "total": 1020,
+    "status": "pending",
+    "orderDate": "2026-08-04T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-08T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-213",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Salmon",
+        "quantity": 40,
+        "unitPrice": 15
+      },
+      {
+        "name": "Oranges",
+        "quantity": 15,
+        "unitPrice": 2.2
+      },
+      {
+        "name": "Salmon",
+        "quantity": 23,
+        "unitPrice": 15
+      }
+    ],
+    "total": 978,
+    "status": "confirmed",
+    "orderDate": "2026-08-04T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-07T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-214",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 34,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Cheese",
+        "quantity": 29,
+        "unitPrice": 8
+      },
+      {
+        "name": "Chicken",
+        "quantity": 59,
+        "unitPrice": 12
+      },
+      {
+        "name": "Beef",
+        "quantity": 11,
+        "unitPrice": 18
+      }
+    ],
+    "total": 1223,
+    "status": "scheduled",
+    "orderDate": "2026-08-05T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-10T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-215",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Tomatoes",
+        "quantity": 33,
+        "unitPrice": 2.5
+      },
+      {
+        "name": "Cheese",
+        "quantity": 24,
+        "unitPrice": 8
+      }
+    ],
+    "total": 275,
+    "status": "scheduled",
+    "orderDate": "2026-08-05T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-07T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-216",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Beef",
+        "quantity": 34,
+        "unitPrice": 18
+      },
+      {
+        "name": "Cheese",
+        "quantity": 52,
+        "unitPrice": 8
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 21,
+        "unitPrice": 2.5
+      }
+    ],
+    "total": 1081,
+    "status": "pending",
+    "orderDate": "2026-08-05T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-08T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-217",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Eggs",
+        "quantity": 21,
+        "unitPrice": 5
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 27,
+        "unitPrice": 1.8
+      },
+      {
+        "name": "Cheese",
+        "quantity": 21,
+        "unitPrice": 8
+      }
+    ],
+    "total": 322,
+    "status": "scheduled",
+    "orderDate": "2026-08-06T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-08T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-218",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Beef",
+        "quantity": 13,
+        "unitPrice": 18
+      },
+      {
+        "name": "Eggs",
+        "quantity": 25,
+        "unitPrice": 5
+      }
+    ],
+    "total": 359,
+    "status": "pending",
+    "orderDate": "2026-08-06T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-08T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-219",
+    "supplier": "Ocean Seafood",
+    "items": [
+      {
+        "name": "Carrots",
+        "quantity": 45,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Bread",
+        "quantity": 27,
+        "unitPrice": 4
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 52,
+        "unitPrice": 1.8
+      }
+    ],
+    "total": 256,
+    "status": "scheduled",
+    "orderDate": "2026-08-06T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-08T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-220",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Cheese",
+        "quantity": 41,
+        "unitPrice": 8
+      },
+      {
+        "name": "Chicken",
+        "quantity": 51,
+        "unitPrice": 12
+      },
+      {
+        "name": "Cheese",
+        "quantity": 40,
+        "unitPrice": 8
+      },
+      {
+        "name": "Oranges",
+        "quantity": 25,
+        "unitPrice": 2.2
+      }
+    ],
+    "total": 1315,
+    "status": "pending",
+    "orderDate": "2026-08-07T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-12T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-221",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Onions",
+        "quantity": 51,
+        "unitPrice": 0.8
+      },
+      {
+        "name": "Carrots",
+        "quantity": 23,
+        "unitPrice": 1.2
+      },
+      {
+        "name": "Beef",
+        "quantity": 36,
+        "unitPrice": 18
+      },
+      {
+        "name": "Apples",
+        "quantity": 31,
+        "unitPrice": 2
+      }
+    ],
+    "total": 778,
+    "status": "scheduled",
+    "orderDate": "2026-08-07T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-10T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-222",
+    "supplier": "Dairy Fresh",
+    "items": [
+      {
+        "name": "Eggs",
+        "quantity": 41,
+        "unitPrice": 5
+      },
+      {
+        "name": "Chicken",
+        "quantity": 14,
+        "unitPrice": 12
+      },
+      {
+        "name": "Cheese",
+        "quantity": 32,
+        "unitPrice": 8
+      }
+    ],
+    "total": 629,
+    "status": "scheduled",
+    "orderDate": "2026-08-07T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-09T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-223",
+    "supplier": "Green Valley Produce",
+    "items": [
+      {
+        "name": "Chicken",
+        "quantity": 31,
+        "unitPrice": 12
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 41,
+        "unitPrice": 12
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 41,
+        "unitPrice": 12
+      },
+      {
+        "name": "Oranges",
+        "quantity": 13,
+        "unitPrice": 2.2
+      }
+    ],
+    "total": 1385,
+    "status": "scheduled",
+    "orderDate": "2026-08-08T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-13T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-224",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Shrimp",
+        "quantity": 17,
+        "unitPrice": 12
+      },
+      {
+        "name": "Carrots",
+        "quantity": 27,
+        "unitPrice": 1.2
+      }
+    ],
+    "total": 236,
+    "status": "pending",
+    "orderDate": "2026-08-08T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-11T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-225",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Milk",
+        "quantity": 19,
+        "unitPrice": 3.5
+      },
+      {
+        "name": "Chicken",
+        "quantity": 15,
+        "unitPrice": 12
+      }
+    ],
+    "total": 247,
+    "status": "scheduled",
+    "orderDate": "2026-08-08T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-13T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-226",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Eggs",
+        "quantity": 33,
+        "unitPrice": 5
+      },
+      {
+        "name": "Tomatoes",
+        "quantity": 16,
+        "unitPrice": 2.5
+      }
+    ],
+    "total": 205,
+    "status": "confirmed",
+    "orderDate": "2026-08-09T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-11T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-227",
+    "supplier": "Artisan Bakery",
+    "items": [
+      {
+        "name": "Shrimp",
+        "quantity": 43,
+        "unitPrice": 12
+      },
+      {
+        "name": "Lettuce",
+        "quantity": 16,
+        "unitPrice": 1.8
+      }
+    ],
+    "total": 545,
+    "status": "confirmed",
+    "orderDate": "2026-08-09T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-13T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-228",
+    "supplier": "Fresh Farms Co.",
+    "items": [
+      {
+        "name": "Bread",
+        "quantity": 27,
+        "unitPrice": 4
+      },
+      {
+        "name": "Salmon",
+        "quantity": 28,
+        "unitPrice": 15
+      },
+      {
+        "name": "Bread",
+        "quantity": 29,
+        "unitPrice": 4
+      },
+      {
+        "name": "Carrots",
+        "quantity": 52,
+        "unitPrice": 1.2
+      }
+    ],
+    "total": 706,
+    "status": "scheduled",
+    "orderDate": "2026-08-10T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-15T00:00:00.000Z",
+    "isAiScheduled": true
+  },
+  {
+    "id": "ORD-229",
+    "supplier": "Premium Meats",
+    "items": [
+      {
+        "name": "Potatoes",
+        "quantity": 26,
+        "unitPrice": 1.5
+      },
+      {
+        "name": "Beef",
+        "quantity": 49,
+        "unitPrice": 18
+      },
+      {
+        "name": "Shrimp",
+        "quantity": 18,
+        "unitPrice": 12
+      }
+    ],
+    "total": 1137,
+    "status": "confirmed",
+    "orderDate": "2026-08-10T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-15T00:00:00.000Z",
+    "isAiScheduled": false
+  },
+  {
+    "id": "ORD-230",
+    "supplier": "Local Butcher Shop",
+    "items": [
+      {
+        "name": "Apples",
+        "quantity": 33,
+        "unitPrice": 2
+      },
+      {
+        "name": "Salmon",
+        "quantity": 34,
+        "unitPrice": 15
+      },
+      {
+        "name": "Bread",
+        "quantity": 27,
+        "unitPrice": 4
+      }
+    ],
+    "total": 684,
+    "status": "scheduled",
+    "orderDate": "2026-08-10T00:00:00.000Z",
+    "expectedDeliveryDate": "2026-08-12T00:00:00.000Z",
+    "isAiScheduled": false
+  }
+]

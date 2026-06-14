@@ -61,7 +61,8 @@ export interface Order {
   total: number;
   status: 'scheduled' | 'pending' | 'confirmed' | 'delivered' | 'cancelled';
   orderDate: string;
-  deliveryDate: string;
+  expectedDeliveryDate: string;
+  actualDeliveryDate?: string;
   isAiScheduled: boolean;
 }
 

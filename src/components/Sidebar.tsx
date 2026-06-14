@@ -23,7 +23,7 @@ const navItems = [
   { path: '/predictions', label: 'Predictions', icon: BrainCircuit },
   { path: '/suppliers', label: 'Suppliers', icon: Truck },
   { path: '/contracts', label: 'Contracts', icon: FileText },
-  { path: '/orders', label: 'Orders', icon: ShoppingCart },
+  { path: '/orders', label: 'Order Management', icon: ShoppingCart },
   { path: '/analytics', label: 'Analytics', icon: BarChart3 },
   { path: '/assistant', label: 'AI Assistant', icon: MessageSquare },
   { path: '/settings', label: 'Settings', icon: Settings },
