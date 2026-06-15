@@ -57,7 +57,7 @@ export interface Contract {
 export interface Order {
   id: string;
   supplier: string;
-  items: { name: string; quantity: number; unitPrice: number }[];
+  items: { name: string; quantity: number; unitPrice: number; unit?: string }[];
   total: number;
   status: 'scheduled' | 'pending' | 'confirmed' | 'delivered' | 'cancelled';
   orderDate: string;

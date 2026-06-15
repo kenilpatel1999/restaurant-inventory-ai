@@ -8,6 +8,7 @@ import { format, isAfter, isBefore, addDays } from 'date-fns';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { DateRangePicker } from '@/components/ui/DateRangePicker';
 import { PastOrderComponent, CurrentOrderComponent, FutureOrderComponent } from '@/components/orders/OrderComponents';
+import { DeliveryVerificationDialog } from '@/components/orders/DeliveryVerificationDialog';
 import staticOrders from '@/data/orders.json';
 
 // Config variable for days threshold
@@ -40,6 +41,8 @@ export function Orders() {
   const [cancelMessage, setCancelMessage] = useState('');
   const [cancelConfirmStep, setCancelConfirmStep] = useState(false);
   const [modifiedItems, setModifiedItems] = useState<{ name: string; quantity: number; unitPrice: number }[]>([]);
+  const [verifyDialogOpen, setVerifyDialogOpen] = useState(false);
+  const [orderToVerify, setOrderToVerify] = useState<Order | null>(null);
 
   // Filter orders by date range
   const filteredOrders = orders.filter((order) => {
@@ -144,6 +147,11 @@ export function Orders() {
     setModifyDialogOpen(true);
   };
 
+  const handleVerifyDelivery = (order: Order) => {
+    setOrderToVerify(order);
+    setVerifyDialogOpen(true);
+  };
+
   const handleCancelConfirm = () => {
     setCancelConfirmStep(true);
   };
@@ -202,6 +210,7 @@ export function Orders() {
           isExpanded={isExpanded}
           onToggle={() => toggleOrderExpansion(order.id)}
           index={index}
+          onVerifyDelivery={() => handleVerifyDelivery(order)}
         />
       );
     } else {
@@ -484,6 +493,18 @@ export function Orders() {
           </div>
         </DialogContent>
       </Dialog>
+
+      {/* Delivery Verification Dialog */}
+      {orderToVerify && (
+        <DeliveryVerificationDialog
+          open={verifyDialogOpen}
+          onClose={() => {
+            setVerifyDialogOpen(false);
+            setOrderToVerify(null);
+          }}
+          order={orderToVerify}
+        />
+      )}
     </div>
   );
 }

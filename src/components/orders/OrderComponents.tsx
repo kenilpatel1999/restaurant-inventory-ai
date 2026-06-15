@@ -81,7 +81,11 @@ export function PastOrderComponent({ order, isExpanded, onToggle, index }: Order
   );
 }
 
-export function CurrentOrderComponent({ order, isExpanded, onToggle, index }: OrderComponentProps) {
+interface CurrentOrderComponentProps extends OrderComponentProps {
+  onVerifyDelivery?: () => void;
+}
+
+export function CurrentOrderComponent({ order, isExpanded, onToggle, index, onVerifyDelivery }: CurrentOrderComponentProps) {
   const cfg = statusConfig[order.status];
 
   return (
@@ -133,6 +137,15 @@ export function CurrentOrderComponent({ order, isExpanded, onToggle, index }: Or
               <p>Expected Delivery: {new Date(order.expectedDeliveryDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</p>
               <p className="text-base sm:text-lg font-bold text-text-light dark:text-text-dark mt-1">${order.total.toFixed(2)}</p>
             </div>
+
+            {onVerifyDelivery && (
+              <button
+                onClick={onVerifyDelivery}
+                className="rounded-lg border border-emerald-200 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-900/20 px-3 py-1.5 text-xs font-medium text-emerald-600 dark:text-emerald-400 hover:bg-emerald-100 dark:hover:bg-emerald-900/30 transition-colors"
+              >
+                Verify Delivery
+              </button>
+            )}
           </div>
         </motion.div>
       )}
